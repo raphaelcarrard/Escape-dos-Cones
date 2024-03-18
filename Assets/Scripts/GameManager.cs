@@ -7,8 +7,6 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
 
-    public io.newgrounds.core ngio_core;
-
     public static GameManager instance;
     public float velocidadeCones = 50f;
     [SerializeField]
@@ -17,17 +15,6 @@ public class GameManager : MonoBehaviour
     public Button menuBotao, retomarBotao;
     [SerializeField]
     public Text mostraPontuacao, melhorPontuacao, pontuacaoAtual, pausaTexto, fimDeJogoTexto, jogarTexto, instrucaoTexto;
-
-    void unlockMedal(int medal_id) {
-        io.newgrounds.components.Medal.unlock medal_unlock = new io.newgrounds.components.Medal.unlock();
-        medal_unlock.id = medal_id;
-        medal_unlock.callWith(ngio_core, onMedalUnlocked);
-    }
-
-    void onMedalUnlocked(io.newgrounds.results.Medal.unlock result) {
-        io.newgrounds.objects.medal medal = result.medal;
-        Debug.Log( "Medal Unlocked: " + medal.name + " (" + medal.value + " points)" );
-    }
 
 
     void Awake()
@@ -78,7 +65,7 @@ public class GameManager : MonoBehaviour
 
     public void PausaJogo()
     {
-	  unlockMedal(71677);
+	    NGHelper.instance.unlockMedal(71677);
         pausaPainel.SetActive(true);
         instrucaoPainel.SetActive(false);
         instrucaoTexto.gameObject.SetActive(false);
@@ -110,6 +97,7 @@ public class GameManager : MonoBehaviour
 
     public void seJogadorMorreu(int pontuacao)
     {
+        NGHelper.instance.NGSubmitScore(13586, pontuacao);
         pausaPainel.SetActive(true);
         instrucaoPainel.SetActive(false);
         instrucaoTexto.gameObject.SetActive(false);

@@ -7,8 +7,6 @@ using UnityEngine.SceneManagement;
 public class PlayerScript : MonoBehaviour
 {
 
-    public io.newgrounds.core ngio_core;
-
     public static PlayerScript instance;
     public float velocidade = 15f;
     public float mapaLargura = 1f;
@@ -20,17 +18,7 @@ public class PlayerScript : MonoBehaviour
     [SerializeField]
     private AudioClip pontoClip, morteClip;
     public int pontuacao;
-
-    void unlockMedal(int medal_id) {
-        io.newgrounds.components.Medal.unlock medal_unlock = new io.newgrounds.components.Medal.unlock();
-        medal_unlock.id = medal_id;
-        medal_unlock.callWith(ngio_core, onMedalUnlocked);
-    }
-
-    void onMedalUnlocked(io.newgrounds.results.Medal.unlock result) {
-        io.newgrounds.objects.medal medal = result.medal;
-        Debug.Log( "Medal Unlocked: " + medal.name + " (" + medal.value + " points)" );
-    }
+    public bool medal1, medal2, medal3, medal4, medal5, medal6, medal7, medal8;
 
     void Awake()
     {
@@ -42,6 +30,41 @@ public class PlayerScript : MonoBehaviour
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
+    }
+
+    void Update(){
+        if(pontuacao >= 50 && medal1 == false){
+            NGHelper.instance.unlockMedal(77869);
+            medal1 = true;
+        }
+        if(pontuacao >= 100 && medal2 == false){
+            NGHelper.instance.unlockMedal(77870);
+            medal2 = true;
+        }
+        if(pontuacao >= 150 && medal3 == false){
+            NGHelper.instance.unlockMedal(77871);
+            medal3 = true;
+        }
+        if(pontuacao >= 200 && medal4 == false){
+            NGHelper.instance.unlockMedal(77872);
+            medal4 = true;
+        }
+        if(pontuacao >= 250 && medal5 == false){
+            NGHelper.instance.unlockMedal(77873);
+            medal5 = true;
+        }
+        if(pontuacao >= 300 && medal6 == false){
+            NGHelper.instance.unlockMedal(77874);
+            medal6 = true;
+        }
+        if(pontuacao >= 350 && medal7 == false){
+            NGHelper.instance.unlockMedal(77875);
+            medal7 = true;
+        }
+        if(pontuacao >= 400 && medal8 == false){
+            NGHelper.instance.unlockMedal(77876);
+            medal8 = true;
+        }
     }
 
     void Instance()
@@ -69,7 +92,7 @@ public class PlayerScript : MonoBehaviour
     {
         if (collider.gameObject.tag == "Cone")
         {
-	      unlockMedal(71676);
+	        NGHelper.instance.unlockMedal(71676);
             GameManager.instance.seJogadorMorreu(pontuacao);
             FindObjectOfType<GameManager>().FimDeJogo();
         }
@@ -79,7 +102,7 @@ public class PlayerScript : MonoBehaviour
     {
         if (target.tag == "Cone")
         {
-	      unlockMedal(71675);
+	        NGHelper.instance.unlockMedal(71675);
             audioSource.PlayOneShot(pontoClip);
             pontuacao++;
             GameManager.instance.SetaPontuacao(pontuacao);
