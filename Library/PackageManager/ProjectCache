@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638463903940006336
+      ticks: 638463903960000000
     m_Hash: 1597719133
   m_LockFileStatus:
     m_FilePath: E:/My Games/Escape dos Cones/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638463903940299656
+      ticks: 638463903960000000
     m_Hash: 3382073216
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -436,10 +436,12 @@ m_ResolvedPackages:
     - 9.0.0
     - 9.0.1
     - 9.0.2
+    - 9.0.3
     compatible:
     - 9.0.1
     - 9.0.2
-    recommended: 9.0.2
+    - 9.0.3
+    recommended: 9.0.3
     deprecated: []
   dependencies:
   - name: com.unity.2d.common
@@ -676,10 +678,12 @@ m_ResolvedPackages:
     - 10.0.1
     - 10.0.2
     - 10.0.3
+    - 10.0.4
     compatible:
     - 10.0.2
     - 10.0.3
-    recommended: 10.0.3
+    - 10.0.4
+    recommended: 10.0.4
     deprecated: []
   dependencies:
   - name: com.unity.mathematics
@@ -1355,6 +1359,7 @@ m_ResolvedPackages:
     - 1.4.1
     - 1.4.2
     - 1.4.3
+    - 1.4.4
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -1365,6 +1370,7 @@ m_ResolvedPackages:
     - 1.4.1
     - 1.4.2
     - 1.4.3
+    - 1.4.4
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -1727,6 +1733,7 @@ m_ResolvedPackages:
     - 2.0.0
     - 3.0.0-exp.1
     - 3.0.0-exp.3
+    - 3.0.0-exp.4
     compatible:
     - 2.0.0
     - 3.0.0-exp.1
@@ -4598,6 +4605,7 @@ m_ResolvedPackages:
     - 2.4.0-exp.2
     - 2.4.0-pre.2
     - 2.4.0-pre.5
+    - 2.4.0
     compatible:
     - 1.2.4
     - 1.3.1
@@ -4617,6 +4625,7 @@ m_ResolvedPackages:
     - 2.4.0-exp.2
     - 2.4.0-pre.2
     - 2.4.0-pre.5
+    - 2.4.0
     recommended: 1.2.4
     deprecated: []
   dependencies:
@@ -4823,10 +4832,12 @@ m_ResolvedPackages:
     - 1.8.11
     - 1.8.12
     - 1.8.13
+    - 1.8.14
     compatible:
     - 1.8.12
     - 1.8.13
-    recommended: 1.8.13
+    - 1.8.14
+    recommended: 1.8.14
     deprecated: []
   dependencies:
   - name: com.unity.mathematics

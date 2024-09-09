@@ -59,7 +59,7 @@
     <UnityVersion>2023.2.11f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Users\rapha\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.0.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Users\rapha\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.0.1\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="E:\Unity\Hub\Editor\2023.2.11f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="E:\Unity\Hub\Editor\2023.2.11f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="E:\Unity\Hub\Editor\2023.2.11f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
@@ -91,10 +91,10 @@
     <Compile Include="Assets\io\newgrounds\results\Event.cs" />
     <Compile Include="Assets\io\newgrounds\objects\session.cs" />
     <Compile Include="Assets\io\newgrounds\components\App.cs" />
+    <Compile Include="Assets\io\newgrounds\core.cs" />
     <Compile Include="Assets\io\newgrounds\components\ScoreBoard.cs" />
     <Compile Include="Assets\io\newgrounds\SessionLoader.cs" />
     <Compile Include="Assets\io\newgrounds\results\ScoreBoard.cs" />
-    <Compile Include="Assets\io\newgrounds\core.cs" />
     <Compile Include="Assets\io\newgrounds\callModel.cs" />
     <Compile Include="Assets\Scripts\NGHelper.cs" />
     <Compile Include="Assets\SimpleJSON\JSONStreamEncoder.cs" />
@@ -108,8 +108,8 @@
     <Compile Include="Assets\io\newgrounds\results\App.cs" />
     <Compile Include="Assets\io\newgrounds\resultModel.cs" />
     <Compile Include="Assets\io\newgrounds\objects\scoreboard.cs" />
-    <Compile Include="Assets\SimpleJSON\Properties\AssemblyInfo.cs" />
     <Compile Include="Assets\io\newgrounds\results\Medal.cs" />
+    <Compile Include="Assets\SimpleJSON\Properties\AssemblyInfo.cs" />
     <Compile Include="Assets\io\newgrounds\ngCrypto.cs" />
     <Compile Include="Assets\io\newgrounds\results\Gateway.cs" />
   </ItemGroup>

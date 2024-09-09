@@ -113,35 +113,35 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 17722}
+      Script: {instanceID: 17716}
     - Class: 114
-      Script: {instanceID: 17724}
+      Script: {instanceID: 17718}
     - Class: 114
-      Script: {instanceID: 23568}
+      Script: {instanceID: 23622}
     - Class: 114
-      Script: {instanceID: 23618}
+      Script: {instanceID: 23670}
     - Class: 114
-      Script: {instanceID: 23634}
+      Script: {instanceID: 23686}
     - Class: 114
-      Script: {instanceID: 23762}
+      Script: {instanceID: 23814}
     - Class: 114
-      Script: {instanceID: 23816}
+      Script: {instanceID: 23870}
     - Class: 114
-      Script: {instanceID: 23894}
+      Script: {instanceID: 23950}
     - Class: 114
-      Script: {instanceID: 24926}
+      Script: {instanceID: 24992}
     - Class: 114
-      Script: {instanceID: 24966}
+      Script: {instanceID: 25032}
     - Class: 114
-      Script: {instanceID: 25200}
+      Script: {instanceID: 25266}
     - Class: 114
-      Script: {instanceID: 25582}
+      Script: {instanceID: 25652}
     - Class: 114
-      Script: {instanceID: 25950}
+      Script: {instanceID: 26022}
     - Class: 114
-      Script: {instanceID: 26276}
+      Script: {instanceID: 26350}
     - Class: 114
-      Script: {instanceID: 26620}
+      Script: {instanceID: 26698}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -184,25 +184,25 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 23568}
+      Script: {instanceID: 23622}
     - Class: 114
-      Script: {instanceID: 23816}
+      Script: {instanceID: 23870}
     - Class: 114
-      Script: {instanceID: 24966}
+      Script: {instanceID: 25032}
     - Class: 114
-      Script: {instanceID: 24990}
+      Script: {instanceID: 25056}
     - Class: 114
-      Script: {instanceID: 25200}
+      Script: {instanceID: 25266}
     - Class: 114
-      Script: {instanceID: 25950}
+      Script: {instanceID: 26022}
     - Class: 114
-      Script: {instanceID: 26276}
+      Script: {instanceID: 26350}
     - Class: 114
-      Script: {instanceID: 26620}
+      Script: {instanceID: 26460}
     - Class: 114
-      Script: {instanceID: 33262}
+      Script: {instanceID: 26698}
     - Class: 114
-      Script: {instanceID: 33352}
+      Script: {instanceID: 27720}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -716,6 +716,12 @@ ScriptsOnlyBuild:
     className: SpriteShape
   - hash:
       serializedVersion: 2
+      Hash: 9583cb6cdce75556d3e21d4caf7038e7
+    assemblyName: Assembly-CSharp
+    namespaceName: io.newgrounds
+    className: core
+  - hash:
+      serializedVersion: 2
       Hash: 1131d16e2402427640760042b5486b11
     assemblyName: Unity.2D.IK.Runtime
     namespaceName: UnityEngine.U2D.IK
@@ -776,6 +782,12 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
+      Hash: 387b44945e71d0201345ad6ac1befe09
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: NewgroundsAPI
+  - hash:
+      serializedVersion: 2
       Hash: 3b5263a98bcc71d9a9d1d78a31b34ced
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
@@ -798,6 +810,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: AnimationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 98dedda1a2d91b973768472ee652cdda
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: NGHelper
   - hash:
       serializedVersion: 2
       Hash: a90f6a00b23520788be7d89ee3b0773d
@@ -834,24 +852,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
     className: EventTrigger
-  - hash:
-      serializedVersion: 2
-      Hash: 9583cb6cdce75556d3e21d4caf7038e7
-    assemblyName: Assembly-CSharp
-    namespaceName: io.newgrounds
-    className: core
-  - hash:
-      serializedVersion: 2
-      Hash: 387b44945e71d0201345ad6ac1befe09
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: NewgroundsAPI
-  - hash:
-      serializedVersion: 2
-      Hash: 98dedda1a2d91b973768472ee652cdda
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: NGHelper
   platform: 20
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
