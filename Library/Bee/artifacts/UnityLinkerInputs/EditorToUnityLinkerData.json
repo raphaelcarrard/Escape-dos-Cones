@@ -43,6 +43,7 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Loader.unity",
                 "Assets/Scenes/MainMenu.unity"
             ]
         },
@@ -53,6 +54,7 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Loader.unity",
                 "Assets/Scenes/MainMenu.unity"
             ]
         },
@@ -71,19 +73,13 @@
             "usedInScenes": []
         },
         {
-            "managedAssemblyName": "Assembly-CSharp.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "io.newgrounds.core",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
             "managedAssemblyName": "",
             "nativeClass": "LevelGameManager",
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Loader.unity",
                 "Assets/Scenes/MainMenu.unity"
             ]
         },
@@ -115,6 +111,7 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Loader.unity",
                 "Assets/Scenes/MainMenu.unity"
             ]
         },
@@ -132,14 +129,22 @@
             "moduleName": "AI",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Loader.unity",
                 "Assets/Scenes/MainMenu.unity"
             ]
         },
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "NGHelper",
+            "fullManagedTypeName": "NgioAppConnector",
             "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "",
+            "nativeClass": "PhysicsManager",
+            "fullManagedTypeName": "",
+            "moduleName": "Physics",
             "usedInScenes": []
         },
         {
@@ -192,6 +197,41 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TextMeshProUGUI",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TMP_FontAsset",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TMP_Settings",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TMP_SpriteAsset",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TMP_StyleSheet",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "AudioManager",
             "fullManagedTypeName": "UnityEditor.AudioManager",
@@ -219,6 +259,7 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Loader.unity",
                 "Assets/Scenes/MainMenu.unity"
             ]
         },
@@ -227,13 +268,6 @@
             "nativeClass": "Physics2DSettings",
             "fullManagedTypeName": "UnityEditor.Physics2DSettings",
             "moduleName": "Physics2D",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "PhysicsManager",
-            "fullManagedTypeName": "UnityEditor.PhysicsManager",
-            "moduleName": "Physics",
             "usedInScenes": []
         },
         {
@@ -291,6 +325,7 @@
             "moduleName": "Audio",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Loader.unity",
                 "Assets/Scenes/MainMenu.unity"
             ]
         },
@@ -311,6 +346,7 @@
             "moduleName": "Audio",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Loader.unity",
                 "Assets/Scenes/MainMenu.unity"
             ]
         },
@@ -331,6 +367,7 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Loader.unity",
                 "Assets/Scenes/MainMenu.unity"
             ]
         },
@@ -350,6 +387,7 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Loader.unity",
                 "Assets/Scenes/MainMenu.unity"
             ]
         },
@@ -360,6 +398,7 @@
             "moduleName": "UI",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Loader.unity",
                 "Assets/Scenes/MainMenu.unity"
             ]
         },
@@ -370,6 +409,7 @@
             "moduleName": "UI",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Loader.unity",
                 "Assets/Scenes/MainMenu.unity"
             ]
         },
@@ -389,6 +429,7 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Loader.unity",
                 "Assets/Scenes/MainMenu.unity"
             ]
         },
@@ -413,6 +454,7 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Loader.unity",
                 "Assets/Scenes/MainMenu.unity"
             ]
         },
@@ -423,6 +465,7 @@
             "moduleName": "TextRendering",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Loader.unity",
                 "Assets/Scenes/MainMenu.unity"
             ]
         },
@@ -433,6 +476,7 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Loader.unity",
                 "Assets/Scenes/MainMenu.unity"
             ]
         },
@@ -443,6 +487,7 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Loader.unity",
                 "Assets/Scenes/MainMenu.unity"
             ]
         },
@@ -453,6 +498,7 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Loader.unity",
                 "Assets/Scenes/MainMenu.unity"
             ]
         },
@@ -463,6 +509,7 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Loader.unity",
                 "Assets/Scenes/MainMenu.unity"
             ]
         },
@@ -473,6 +520,7 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Loader.unity",
                 "Assets/Scenes/MainMenu.unity"
             ]
         },
@@ -499,6 +547,7 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Loader.unity",
                 "Assets/Scenes/MainMenu.unity"
             ]
         },
@@ -525,6 +574,7 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Loader.unity",
                 "Assets/Scenes/MainMenu.unity"
             ]
         },
@@ -544,6 +594,7 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Loader.unity",
                 "Assets/Scenes/MainMenu.unity"
             ]
         },
@@ -554,6 +605,7 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Loader.unity",
                 "Assets/Scenes/MainMenu.unity"
             ]
         },
@@ -573,6 +625,7 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Loader.unity",
                 "Assets/Scenes/MainMenu.unity"
             ]
         },
@@ -583,6 +636,7 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Loader.unity",
                 "Assets/Scenes/MainMenu.unity"
             ]
         },
@@ -593,6 +647,7 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Loader.unity",
                 "Assets/Scenes/MainMenu.unity"
             ]
         },
@@ -603,6 +658,7 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Loader.unity",
                 "Assets/Scenes/MainMenu.unity"
             ]
         },
@@ -2321,6 +2377,14 @@
             "baseModule": "Core"
         },
         {
+            "name": "GraphicsStateCollection",
+            "qualifiedName": "GraphicsStateCollection",
+            "nativeNamespace": "",
+            "module": "Core",
+            "baseName": "NamedObject",
+            "baseModule": "Core"
+        },
+        {
             "name": "HumanTemplate",
             "qualifiedName": "HumanTemplate",
             "nativeNamespace": "",
@@ -2457,8 +2521,8 @@
             "baseModule": "Core"
         },
         {
-            "name": "PhysicMaterial",
-            "qualifiedName": "PhysicMaterial",
+            "name": "PhysicsMaterial",
+            "qualifiedName": "PhysicsMaterial",
             "nativeNamespace": "",
             "module": "Physics",
             "baseName": "NamedObject",
@@ -3323,6 +3387,7 @@
     ],
     "forceIncludeModules": [],
     "forceExcludeModules": [
+        "AMD",
         "AR",
         "ClusterInput",
         "ClusterRenderer",

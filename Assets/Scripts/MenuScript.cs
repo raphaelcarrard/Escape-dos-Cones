@@ -16,13 +16,13 @@ public class MenuScript : MonoBehaviour
 
     public void Jogar()
     {
-        NGHelper.instance.unlockMedal(71672);
+        StartCoroutine(NGIO.UnlockMedal(71672, NgioAppConnector.instance.OnMedalUnlocked));
         SceneManager.LoadScene("Game");
     }
 
     public void AbrePainelDeComoJogar()
     {
-        NGHelper.instance.unlockMedal(71673);
+        StartCoroutine(NGIO.UnlockMedal(71673, NgioAppConnector.instance.OnMedalUnlocked));
         painel.SetActive(true);
     }
 

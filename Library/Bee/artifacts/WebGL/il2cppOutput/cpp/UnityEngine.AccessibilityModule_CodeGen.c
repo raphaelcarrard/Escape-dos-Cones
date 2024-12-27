@@ -21,7 +21,7 @@ extern void AccessibilityManager_SendAccessibilityNotification_mD1622940B50F840D
 extern void AccessibilityManager_Internal_Initialize_mBCC892503DA42AF7A8AD91918E0C5BB04DF62B84 (void);
 extern void AccessibilityManager_Internal_Update_m14966B56AEA0950BC940AB264999BCC172EE1DCE (void);
 extern void AccessibilityManager_Internal_GetRootNodeIds_mCB3855E8EDB937C5D097FD7CCD84BE50A6ADB6A5 (void);
-extern void AccessibilityManager_Internal_GetNode_mAE0B6A4B01FA2C354E02D1B017CE7D6794AED604 (void);
+extern void AccessibilityManager_Internal_GetNode_mA5DBEEE6012BF17E04200FCC028B0729E3F67CA1 (void);
 extern void AccessibilityManager_Internal_GetNodeIdAt_m55E20752B5F8C3ED7910ED649F0BD70627D974B3 (void);
 extern void AccessibilityManager_Internal_OnAccessibilityNotificationReceived_m1C65ECB977E8A5A7F6C0AD8F97D0B39A49832C86 (void);
 extern void AccessibilityManager_QueueNotification_m78C7248860B35C51F688B0BE377A54155D6CC9C5 (void);
@@ -38,6 +38,12 @@ extern void NotificationContext_set_wasAnnouncementSuccessful_mD8F69B143EF4815BC
 extern void NotificationContext_get_currentNode_mB1116EC445A271556E44D2A21963B306A87DDD57 (void);
 extern void NotificationContext_set_currentNode_mDF9C200B9476BD1CFC7A7A364F1DA3681859C12E (void);
 extern void NotificationContext_set_nextNode_mAC398C81DC48BD89B85D932BD7959C55985B6E2B (void);
+extern void NotificationContext_get_fontScale_mF7F3CCC0FA60799DA2F89923A247B6AB0CB82CEC (void);
+extern void NotificationContext_set_fontScale_m896C4DD01D56C9589F4B1D0C36E601D228E18611 (void);
+extern void NotificationContext_get_isBoldTextEnabled_mFC0C3B09FC0FE5BF822D07DFC0961402F5084E11 (void);
+extern void NotificationContext_set_isBoldTextEnabled_m3A37BD8251B1174EE2814AD7301429338B611E39 (void);
+extern void NotificationContext_get_isClosedCaptioningEnabled_mDEE8525771D32877ECF4A722E21C7A8EEF4477F2 (void);
+extern void NotificationContext_set_isClosedCaptioningEnabled_mCAC73C4CB87325895FEAF8BDD027AB37FFABEBDF (void);
 extern void NotificationContext_set_nativeContext_mA27427ADC47003C7E5FA9B1F89EC2F892C6CD0FA (void);
 extern void NotificationContext__ctor_mC39620E6AB64695255F481303439B84C42552024 (void);
 extern void ExclusiveLock__ctor_m875188F2E41DC8113A37A71CE4DC8B6707D265F5 (void);
@@ -57,12 +63,16 @@ extern void AccessibilityNodeData_set_parentId_mCD60B5E43B15577CE8DFBDE445F2F154
 extern void AccessibilityNodeData_set_childIds_m8C2EBFEC9C66F77099AB7A4344C82445D436E036 (void);
 extern void AccessibilityNodeData_set_language_m8FF04B6043B11841CC5F93B7A54C1FE0FDFA0F1A (void);
 extern void AccessibilityNodeData_set_implementsSelected_m9CE2D7764BD44B684C39238FAA6DEE63FF06DA7F (void);
+extern void AccessibilityNodeData_set_implementsDismissed_m9737F36ADF034BB82CFC756370949F79724542CD (void);
 extern void AccessibilityNodeManager_DestroyNativeNode_m02AD32BA9B71834975261D2EF921AD1DCE469E43 (void);
 extern void AccessibilityNodeManager_SetFrame_mE47923B10A1592690CEF29D975C2C22654AA6E0A (void);
 extern void AccessibilityNodeManager_SetChildren_mE43C7A8C5CDC9D8049088AC1A89E0BDC4015C7C9 (void);
 extern void AccessibilityNodeManager_SetActions_m851B8FCD73B118DBA653073F7269412DA7A4DD5B (void);
-extern void AccessibilityNodeManager_Internal_InvokeSelected_m3361DDF76F20E2F5B6240718B79A08B87BD1CC55 (void);
 extern void AccessibilityNodeManager_Internal_InvokeFocusChanged_mF52C86D20B4F7CEF594D028EB8A0D073CDC86F1C (void);
+extern void AccessibilityNodeManager_Internal_InvokeSelected_m3361DDF76F20E2F5B6240718B79A08B87BD1CC55 (void);
+extern void AccessibilityNodeManager_Internal_InvokeIncremented_m43911AF44D7577BFD428E7CAB48DBB1F7EE2EF02 (void);
+extern void AccessibilityNodeManager_Internal_InvokeDecremented_mEFAAE7277E2856511A4FFB730338D59DB0E5227E (void);
+extern void AccessibilityNodeManager_Internal_InvokeDismissed_m68A53CADDE358234374B04D231D071D0816DF974 (void);
 extern void AccessibilityNodeManager_SetFrame_Injected_mE6A1B2BE1CB65747C9A702A529AB1FC60D6CCFA0 (void);
 extern void AccessibilityNodeManager_SetChildren_Injected_m19BD3971BB15ABA6A0AC667E6F05C5E692C095A8 (void);
 extern void AccessibilityNotificationContext_get_notification_m68BFDD01B2BC766255E7B50A96DD6F96B8EA30D1 (void);
@@ -73,6 +83,12 @@ extern void AccessibilityNotificationContext_get_wasAnnouncementSuccessful_m586F
 extern void AccessibilityNotificationContext_get_currentNodeId_mEA271DE9F787C8B25EB1231ED0FA54FF599458BB (void);
 extern void AccessibilityNotificationContext_get_nextNodeId_m1B5F3FA60A3A94C030A4F990D8F820467E3E6514 (void);
 extern void AccessibilityNotificationContext_set_nextNodeId_m7902300291066B5DB6F0A31155E42255C21257ED (void);
+extern void AccessibilitySettings_Internal_OnFontScaleChanged_m188BDB50617266AD9B80720FB3D70011DF06C58A (void);
+extern void AccessibilitySettings_Internal_OnBoldTextStatusChanged_mB80B283779D5416E1162FFB9BB831F2B37AC1C0D (void);
+extern void AccessibilitySettings_Internal_OnClosedCaptioningStatusChanged_m7B522D6FC70776E4D1A5A8B184578F64EE4D11E5 (void);
+extern void AccessibilitySettings_InvokeFontScaleChanged_m01DE529AC72A0FBE344F62C7E03FF028E7C196D0 (void);
+extern void AccessibilitySettings_InvokeBoldTextStatusChanged_mE3FAB90ED74180EF706A8AA160628EB14C202E7D (void);
+extern void AccessibilitySettings_InvokeClosedCaptionStatusChanged_m501523ED4BB118A6FE6370D1C617ADDB007EE8A4 (void);
 extern void AssistiveSupport_get_isScreenReaderEnabled_m9769DC0E61E158E2E11AC637C4122B29D1239B80 (void);
 extern void AssistiveSupport_set_isScreenReaderEnabled_m0226DFBEC36B21C15BEF8EBB3289076D14CEF340 (void);
 extern void AssistiveSupport_get_notificationDispatcher_m5F6A698706FC3CE7A105ED9505B4B223630A74FC (void);
@@ -108,9 +124,12 @@ extern void AccessibilityNode_GetNodeData_m6C7765891167AB6E820D68F4AF89F891F03AC
 extern void AccessibilityNode_ChildrenChanged_m3677FA30E0314C5A641C44696DFE9A3936EB2EFF (void);
 extern void AccessibilityNode_ActionsChanged_m52031FF685A82117789DB62F2185C24FDCE707B2 (void);
 extern void AccessibilityNode_IsInActiveHierarchy_m81A3BC3EEC7156C54AC4BC4D9238037E3DFE4E2C (void);
-extern void AccessibilityNode_FocusChanged_m0C84F8CD499DA9FC887450F9997D579BFB0176B8 (void);
 extern void AccessibilityNode_NotifyFocusChanged_mEA14C3D3534CB0920ECD5AFF32350855BC6FD5E8 (void);
-extern void AccessibilityNode_Selected_mFA3670AF3E6100BE196E7CE2CBB3A4EC3C4171D7 (void);
+extern void AccessibilityNode_InvokeFocusChanged_m79E2A5C2D663F133B2633467738C18F117E6BE8A (void);
+extern void AccessibilityNode_InvokeSelected_mBB094C8957C71FBCA0C033A4F9EE7127B8D1A7BA (void);
+extern void AccessibilityNode_InvokeIncremented_mC2B5AF750A1BC3177E92787DAA385360234B59AF (void);
+extern void AccessibilityNode_InvokeDecremented_m3BF11CFA927B9303367B46C9EA7E0E99A5C422D5 (void);
+extern void AccessibilityNode_Dismissed_m7492D9E72948C6718A13A2FDB628BDC4E81091EF (void);
 extern void AccessibilityHierarchyService_get_hierarchy_mD97C09144AA068B7983DEB882CF7030204090947 (void);
 extern void AccessibilityHierarchyService_Start_mEC19D7908745553B772EC14E4AF0CE4492135B67 (void);
 extern void AccessibilityHierarchyService_Stop_mEA1D729479D0BC1458D851F1B1706EF420351794 (void);
@@ -122,9 +141,7 @@ extern void AccessibilityHierarchyService__ctor_mE2F69255846F000B58E412306376C09
 extern void ServiceManager__ctor_m06C1D1E60CF676E1E526A3E281757604BA5C9F3A (void);
 extern void ServiceManager_UpdateServices_mD104C87C15292CDF135A6D96A161620F15B29582 (void);
 extern void ServiceManager_ScreenReaderStatusChanged_mF8C9F82CBE80964C87F68D06786504164F969CD2 (void);
-extern void ServiceManager_add_screenReaderStatusChanged_m7C96494D8AA77897A370B82B7C74DE0DEFB43BEF (void);
-extern void ServiceManager_remove_screenReaderStatusChanged_m98C802465214B2C6D7C18C2103734B4903A5D54E (void);
-static Il2CppMethodPointer s_methodPointers[127] = 
+static Il2CppMethodPointer s_methodPointers[144] = 
 {
 	AccessibilityAction_Dispose_m7C7E356F1EF00E9B23CAEFA9291D5FBBE78A8907,
 	AccessibilityAction_Dispose_m47E2DCB64AF8193F2A225433524603DC0A729254,
@@ -140,7 +157,7 @@ static Il2CppMethodPointer s_methodPointers[127] =
 	AccessibilityManager_Internal_Initialize_mBCC892503DA42AF7A8AD91918E0C5BB04DF62B84,
 	AccessibilityManager_Internal_Update_m14966B56AEA0950BC940AB264999BCC172EE1DCE,
 	AccessibilityManager_Internal_GetRootNodeIds_mCB3855E8EDB937C5D097FD7CCD84BE50A6ADB6A5,
-	AccessibilityManager_Internal_GetNode_mAE0B6A4B01FA2C354E02D1B017CE7D6794AED604,
+	AccessibilityManager_Internal_GetNode_mA5DBEEE6012BF17E04200FCC028B0729E3F67CA1,
 	AccessibilityManager_Internal_GetNodeIdAt_m55E20752B5F8C3ED7910ED649F0BD70627D974B3,
 	AccessibilityManager_Internal_OnAccessibilityNotificationReceived_m1C65ECB977E8A5A7F6C0AD8F97D0B39A49832C86,
 	AccessibilityManager_QueueNotification_m78C7248860B35C51F688B0BE377A54155D6CC9C5,
@@ -157,6 +174,12 @@ static Il2CppMethodPointer s_methodPointers[127] =
 	NotificationContext_get_currentNode_mB1116EC445A271556E44D2A21963B306A87DDD57,
 	NotificationContext_set_currentNode_mDF9C200B9476BD1CFC7A7A364F1DA3681859C12E,
 	NotificationContext_set_nextNode_mAC398C81DC48BD89B85D932BD7959C55985B6E2B,
+	NotificationContext_get_fontScale_mF7F3CCC0FA60799DA2F89923A247B6AB0CB82CEC,
+	NotificationContext_set_fontScale_m896C4DD01D56C9589F4B1D0C36E601D228E18611,
+	NotificationContext_get_isBoldTextEnabled_mFC0C3B09FC0FE5BF822D07DFC0961402F5084E11,
+	NotificationContext_set_isBoldTextEnabled_m3A37BD8251B1174EE2814AD7301429338B611E39,
+	NotificationContext_get_isClosedCaptioningEnabled_mDEE8525771D32877ECF4A722E21C7A8EEF4477F2,
+	NotificationContext_set_isClosedCaptioningEnabled_mCAC73C4CB87325895FEAF8BDD027AB37FFABEBDF,
 	NotificationContext_set_nativeContext_mA27427ADC47003C7E5FA9B1F89EC2F892C6CD0FA,
 	NotificationContext__ctor_mC39620E6AB64695255F481303439B84C42552024,
 	ExclusiveLock__ctor_m875188F2E41DC8113A37A71CE4DC8B6707D265F5,
@@ -176,12 +199,16 @@ static Il2CppMethodPointer s_methodPointers[127] =
 	AccessibilityNodeData_set_childIds_m8C2EBFEC9C66F77099AB7A4344C82445D436E036,
 	AccessibilityNodeData_set_language_m8FF04B6043B11841CC5F93B7A54C1FE0FDFA0F1A,
 	AccessibilityNodeData_set_implementsSelected_m9CE2D7764BD44B684C39238FAA6DEE63FF06DA7F,
+	AccessibilityNodeData_set_implementsDismissed_m9737F36ADF034BB82CFC756370949F79724542CD,
 	AccessibilityNodeManager_DestroyNativeNode_m02AD32BA9B71834975261D2EF921AD1DCE469E43,
 	AccessibilityNodeManager_SetFrame_mE47923B10A1592690CEF29D975C2C22654AA6E0A,
 	AccessibilityNodeManager_SetChildren_mE43C7A8C5CDC9D8049088AC1A89E0BDC4015C7C9,
 	AccessibilityNodeManager_SetActions_m851B8FCD73B118DBA653073F7269412DA7A4DD5B,
-	AccessibilityNodeManager_Internal_InvokeSelected_m3361DDF76F20E2F5B6240718B79A08B87BD1CC55,
 	AccessibilityNodeManager_Internal_InvokeFocusChanged_mF52C86D20B4F7CEF594D028EB8A0D073CDC86F1C,
+	AccessibilityNodeManager_Internal_InvokeSelected_m3361DDF76F20E2F5B6240718B79A08B87BD1CC55,
+	AccessibilityNodeManager_Internal_InvokeIncremented_m43911AF44D7577BFD428E7CAB48DBB1F7EE2EF02,
+	AccessibilityNodeManager_Internal_InvokeDecremented_mEFAAE7277E2856511A4FFB730338D59DB0E5227E,
+	AccessibilityNodeManager_Internal_InvokeDismissed_m68A53CADDE358234374B04D231D071D0816DF974,
 	AccessibilityNodeManager_SetFrame_Injected_mE6A1B2BE1CB65747C9A702A529AB1FC60D6CCFA0,
 	AccessibilityNodeManager_SetChildren_Injected_m19BD3971BB15ABA6A0AC667E6F05C5E692C095A8,
 	AccessibilityNotificationContext_get_notification_m68BFDD01B2BC766255E7B50A96DD6F96B8EA30D1,
@@ -192,6 +219,12 @@ static Il2CppMethodPointer s_methodPointers[127] =
 	AccessibilityNotificationContext_get_currentNodeId_mEA271DE9F787C8B25EB1231ED0FA54FF599458BB,
 	AccessibilityNotificationContext_get_nextNodeId_m1B5F3FA60A3A94C030A4F990D8F820467E3E6514,
 	AccessibilityNotificationContext_set_nextNodeId_m7902300291066B5DB6F0A31155E42255C21257ED,
+	AccessibilitySettings_Internal_OnFontScaleChanged_m188BDB50617266AD9B80720FB3D70011DF06C58A,
+	AccessibilitySettings_Internal_OnBoldTextStatusChanged_mB80B283779D5416E1162FFB9BB831F2B37AC1C0D,
+	AccessibilitySettings_Internal_OnClosedCaptioningStatusChanged_m7B522D6FC70776E4D1A5A8B184578F64EE4D11E5,
+	AccessibilitySettings_InvokeFontScaleChanged_m01DE529AC72A0FBE344F62C7E03FF028E7C196D0,
+	AccessibilitySettings_InvokeBoldTextStatusChanged_mE3FAB90ED74180EF706A8AA160628EB14C202E7D,
+	AccessibilitySettings_InvokeClosedCaptionStatusChanged_m501523ED4BB118A6FE6370D1C617ADDB007EE8A4,
 	AssistiveSupport_get_isScreenReaderEnabled_m9769DC0E61E158E2E11AC637C4122B29D1239B80,
 	AssistiveSupport_set_isScreenReaderEnabled_m0226DFBEC36B21C15BEF8EBB3289076D14CEF340,
 	AssistiveSupport_get_notificationDispatcher_m5F6A698706FC3CE7A105ED9505B4B223630A74FC,
@@ -228,9 +261,12 @@ static Il2CppMethodPointer s_methodPointers[127] =
 	AccessibilityNode_ChildrenChanged_m3677FA30E0314C5A641C44696DFE9A3936EB2EFF,
 	AccessibilityNode_ActionsChanged_m52031FF685A82117789DB62F2185C24FDCE707B2,
 	AccessibilityNode_IsInActiveHierarchy_m81A3BC3EEC7156C54AC4BC4D9238037E3DFE4E2C,
-	AccessibilityNode_FocusChanged_m0C84F8CD499DA9FC887450F9997D579BFB0176B8,
 	AccessibilityNode_NotifyFocusChanged_mEA14C3D3534CB0920ECD5AFF32350855BC6FD5E8,
-	AccessibilityNode_Selected_mFA3670AF3E6100BE196E7CE2CBB3A4EC3C4171D7,
+	AccessibilityNode_InvokeFocusChanged_m79E2A5C2D663F133B2633467738C18F117E6BE8A,
+	AccessibilityNode_InvokeSelected_mBB094C8957C71FBCA0C033A4F9EE7127B8D1A7BA,
+	AccessibilityNode_InvokeIncremented_mC2B5AF750A1BC3177E92787DAA385360234B59AF,
+	AccessibilityNode_InvokeDecremented_m3BF11CFA927B9303367B46C9EA7E0E99A5C422D5,
+	AccessibilityNode_Dismissed_m7492D9E72948C6718A13A2FDB628BDC4E81091EF,
 	NULL,
 	NULL,
 	NULL,
@@ -251,8 +287,6 @@ static Il2CppMethodPointer s_methodPointers[127] =
 	NULL,
 	ServiceManager_UpdateServices_mD104C87C15292CDF135A6D96A161620F15B29582,
 	ServiceManager_ScreenReaderStatusChanged_mF8C9F82CBE80964C87F68D06786504164F969CD2,
-	ServiceManager_add_screenReaderStatusChanged_m7C96494D8AA77897A370B82B7C74DE0DEFB43BEF,
-	ServiceManager_remove_screenReaderStatusChanged_m98C802465214B2C6D7C18C2103734B4903A5D54E,
 };
 extern void NotificationContext_get_notification_m43EC0F66FFD242C0FB1904CE40316D09CBE73EC0_AdjustorThunk (void);
 extern void NotificationContext_set_notification_m789E1626EC459FB7AC6EA643EEA5DDEBF212A7E0_AdjustorThunk (void);
@@ -263,6 +297,12 @@ extern void NotificationContext_set_wasAnnouncementSuccessful_mD8F69B143EF4815BC
 extern void NotificationContext_get_currentNode_mB1116EC445A271556E44D2A21963B306A87DDD57_AdjustorThunk (void);
 extern void NotificationContext_set_currentNode_mDF9C200B9476BD1CFC7A7A364F1DA3681859C12E_AdjustorThunk (void);
 extern void NotificationContext_set_nextNode_mAC398C81DC48BD89B85D932BD7959C55985B6E2B_AdjustorThunk (void);
+extern void NotificationContext_get_fontScale_mF7F3CCC0FA60799DA2F89923A247B6AB0CB82CEC_AdjustorThunk (void);
+extern void NotificationContext_set_fontScale_m896C4DD01D56C9589F4B1D0C36E601D228E18611_AdjustorThunk (void);
+extern void NotificationContext_get_isBoldTextEnabled_mFC0C3B09FC0FE5BF822D07DFC0961402F5084E11_AdjustorThunk (void);
+extern void NotificationContext_set_isBoldTextEnabled_m3A37BD8251B1174EE2814AD7301429338B611E39_AdjustorThunk (void);
+extern void NotificationContext_get_isClosedCaptioningEnabled_mDEE8525771D32877ECF4A722E21C7A8EEF4477F2_AdjustorThunk (void);
+extern void NotificationContext_set_isClosedCaptioningEnabled_mCAC73C4CB87325895FEAF8BDD027AB37FFABEBDF_AdjustorThunk (void);
 extern void NotificationContext_set_nativeContext_mA27427ADC47003C7E5FA9B1F89EC2F892C6CD0FA_AdjustorThunk (void);
 extern void NotificationContext__ctor_mC39620E6AB64695255F481303439B84C42552024_AdjustorThunk (void);
 extern void AccessibilityNodeData_set_id_m010670C4263AE105E7221B6837DB3B3B8C39100E_AdjustorThunk (void);
@@ -278,6 +318,7 @@ extern void AccessibilityNodeData_set_parentId_mCD60B5E43B15577CE8DFBDE445F2F154
 extern void AccessibilityNodeData_set_childIds_m8C2EBFEC9C66F77099AB7A4344C82445D436E036_AdjustorThunk (void);
 extern void AccessibilityNodeData_set_language_m8FF04B6043B11841CC5F93B7A54C1FE0FDFA0F1A_AdjustorThunk (void);
 extern void AccessibilityNodeData_set_implementsSelected_m9CE2D7764BD44B684C39238FAA6DEE63FF06DA7F_AdjustorThunk (void);
+extern void AccessibilityNodeData_set_implementsDismissed_m9737F36ADF034BB82CFC756370949F79724542CD_AdjustorThunk (void);
 extern void AccessibilityNotificationContext_get_notification_m68BFDD01B2BC766255E7B50A96DD6F96B8EA30D1_AdjustorThunk (void);
 extern void AccessibilityNotificationContext_set_notification_m3DD36A6B5C772A6A7CDC044FB61D2E6ABCF1071B_AdjustorThunk (void);
 extern void AccessibilityNotificationContext_get_isScreenReaderEnabled_m83C39B91CA41D4CE14E0F9F149D82A8B07A2C379_AdjustorThunk (void);
@@ -286,7 +327,7 @@ extern void AccessibilityNotificationContext_get_wasAnnouncementSuccessful_m586F
 extern void AccessibilityNotificationContext_get_currentNodeId_mEA271DE9F787C8B25EB1231ED0FA54FF599458BB_AdjustorThunk (void);
 extern void AccessibilityNotificationContext_get_nextNodeId_m1B5F3FA60A3A94C030A4F990D8F820467E3E6514_AdjustorThunk (void);
 extern void AccessibilityNotificationContext_set_nextNodeId_m7902300291066B5DB6F0A31155E42255C21257ED_AdjustorThunk (void);
-static Il2CppTokenAdjustorThunkPair s_adjustorThunks[32] = 
+static Il2CppTokenAdjustorThunkPair s_adjustorThunks[39] = 
 {
 	{ 0x06000017, NotificationContext_get_notification_m43EC0F66FFD242C0FB1904CE40316D09CBE73EC0_AdjustorThunk },
 	{ 0x06000018, NotificationContext_set_notification_m789E1626EC459FB7AC6EA643EEA5DDEBF212A7E0_AdjustorThunk },
@@ -297,166 +338,190 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[32] =
 	{ 0x0600001D, NotificationContext_get_currentNode_mB1116EC445A271556E44D2A21963B306A87DDD57_AdjustorThunk },
 	{ 0x0600001E, NotificationContext_set_currentNode_mDF9C200B9476BD1CFC7A7A364F1DA3681859C12E_AdjustorThunk },
 	{ 0x0600001F, NotificationContext_set_nextNode_mAC398C81DC48BD89B85D932BD7959C55985B6E2B_AdjustorThunk },
-	{ 0x06000020, NotificationContext_set_nativeContext_mA27427ADC47003C7E5FA9B1F89EC2F892C6CD0FA_AdjustorThunk },
-	{ 0x06000021, NotificationContext__ctor_mC39620E6AB64695255F481303439B84C42552024_AdjustorThunk },
-	{ 0x06000026, AccessibilityNodeData_set_id_m010670C4263AE105E7221B6837DB3B3B8C39100E_AdjustorThunk },
-	{ 0x06000027, AccessibilityNodeData_set_isActive_mE75907C1ADFCF6526A00AB5B3C9601C0C69698AD_AdjustorThunk },
-	{ 0x06000028, AccessibilityNodeData_set_label_mE1C2F563B22C49F0D6D5F4C6CB504D0D0ED89714_AdjustorThunk },
-	{ 0x06000029, AccessibilityNodeData_set_value_mE50F323A25771EDC248C28C56677EB3C1F166B2F_AdjustorThunk },
-	{ 0x0600002A, AccessibilityNodeData_set_hint_m06DFA8DE490A72C91BDD9A2CE5C8160E02FF617C_AdjustorThunk },
-	{ 0x0600002B, AccessibilityNodeData_set_role_m3DCC606228DB09F8B56B4B89E99D8DE4A24648C3_AdjustorThunk },
-	{ 0x0600002C, AccessibilityNodeData_set_allowsDirectInteraction_m62C76A306BD2E6D07BFE16BAF71F80B12A8E70F2_AdjustorThunk },
-	{ 0x0600002D, AccessibilityNodeData_set_state_m6C38957BE9C08063A104D6EEFACC0206581F29D1_AdjustorThunk },
-	{ 0x0600002E, AccessibilityNodeData_set_frame_m6FF1A016E9D607D767C76F3BD3182824EFB4CF78_AdjustorThunk },
-	{ 0x0600002F, AccessibilityNodeData_set_parentId_mCD60B5E43B15577CE8DFBDE445F2F154FE5858A3_AdjustorThunk },
-	{ 0x06000030, AccessibilityNodeData_set_childIds_m8C2EBFEC9C66F77099AB7A4344C82445D436E036_AdjustorThunk },
-	{ 0x06000031, AccessibilityNodeData_set_language_m8FF04B6043B11841CC5F93B7A54C1FE0FDFA0F1A_AdjustorThunk },
-	{ 0x06000032, AccessibilityNodeData_set_implementsSelected_m9CE2D7764BD44B684C39238FAA6DEE63FF06DA7F_AdjustorThunk },
-	{ 0x0600003B, AccessibilityNotificationContext_get_notification_m68BFDD01B2BC766255E7B50A96DD6F96B8EA30D1_AdjustorThunk },
-	{ 0x0600003C, AccessibilityNotificationContext_set_notification_m3DD36A6B5C772A6A7CDC044FB61D2E6ABCF1071B_AdjustorThunk },
-	{ 0x0600003D, AccessibilityNotificationContext_get_isScreenReaderEnabled_m83C39B91CA41D4CE14E0F9F149D82A8B07A2C379_AdjustorThunk },
-	{ 0x0600003E, AccessibilityNotificationContext_get_announcement_m590A8451DD0BEB7DEF23B0D0CB1F9560ECF35A71_AdjustorThunk },
-	{ 0x0600003F, AccessibilityNotificationContext_get_wasAnnouncementSuccessful_m586FF2A87CB135D1EE51F8F4BDBBD20298006EE0_AdjustorThunk },
-	{ 0x06000040, AccessibilityNotificationContext_get_currentNodeId_mEA271DE9F787C8B25EB1231ED0FA54FF599458BB_AdjustorThunk },
-	{ 0x06000041, AccessibilityNotificationContext_get_nextNodeId_m1B5F3FA60A3A94C030A4F990D8F820467E3E6514_AdjustorThunk },
-	{ 0x06000042, AccessibilityNotificationContext_set_nextNodeId_m7902300291066B5DB6F0A31155E42255C21257ED_AdjustorThunk },
+	{ 0x06000020, NotificationContext_get_fontScale_mF7F3CCC0FA60799DA2F89923A247B6AB0CB82CEC_AdjustorThunk },
+	{ 0x06000021, NotificationContext_set_fontScale_m896C4DD01D56C9589F4B1D0C36E601D228E18611_AdjustorThunk },
+	{ 0x06000022, NotificationContext_get_isBoldTextEnabled_mFC0C3B09FC0FE5BF822D07DFC0961402F5084E11_AdjustorThunk },
+	{ 0x06000023, NotificationContext_set_isBoldTextEnabled_m3A37BD8251B1174EE2814AD7301429338B611E39_AdjustorThunk },
+	{ 0x06000024, NotificationContext_get_isClosedCaptioningEnabled_mDEE8525771D32877ECF4A722E21C7A8EEF4477F2_AdjustorThunk },
+	{ 0x06000025, NotificationContext_set_isClosedCaptioningEnabled_mCAC73C4CB87325895FEAF8BDD027AB37FFABEBDF_AdjustorThunk },
+	{ 0x06000026, NotificationContext_set_nativeContext_mA27427ADC47003C7E5FA9B1F89EC2F892C6CD0FA_AdjustorThunk },
+	{ 0x06000027, NotificationContext__ctor_mC39620E6AB64695255F481303439B84C42552024_AdjustorThunk },
+	{ 0x0600002C, AccessibilityNodeData_set_id_m010670C4263AE105E7221B6837DB3B3B8C39100E_AdjustorThunk },
+	{ 0x0600002D, AccessibilityNodeData_set_isActive_mE75907C1ADFCF6526A00AB5B3C9601C0C69698AD_AdjustorThunk },
+	{ 0x0600002E, AccessibilityNodeData_set_label_mE1C2F563B22C49F0D6D5F4C6CB504D0D0ED89714_AdjustorThunk },
+	{ 0x0600002F, AccessibilityNodeData_set_value_mE50F323A25771EDC248C28C56677EB3C1F166B2F_AdjustorThunk },
+	{ 0x06000030, AccessibilityNodeData_set_hint_m06DFA8DE490A72C91BDD9A2CE5C8160E02FF617C_AdjustorThunk },
+	{ 0x06000031, AccessibilityNodeData_set_role_m3DCC606228DB09F8B56B4B89E99D8DE4A24648C3_AdjustorThunk },
+	{ 0x06000032, AccessibilityNodeData_set_allowsDirectInteraction_m62C76A306BD2E6D07BFE16BAF71F80B12A8E70F2_AdjustorThunk },
+	{ 0x06000033, AccessibilityNodeData_set_state_m6C38957BE9C08063A104D6EEFACC0206581F29D1_AdjustorThunk },
+	{ 0x06000034, AccessibilityNodeData_set_frame_m6FF1A016E9D607D767C76F3BD3182824EFB4CF78_AdjustorThunk },
+	{ 0x06000035, AccessibilityNodeData_set_parentId_mCD60B5E43B15577CE8DFBDE445F2F154FE5858A3_AdjustorThunk },
+	{ 0x06000036, AccessibilityNodeData_set_childIds_m8C2EBFEC9C66F77099AB7A4344C82445D436E036_AdjustorThunk },
+	{ 0x06000037, AccessibilityNodeData_set_language_m8FF04B6043B11841CC5F93B7A54C1FE0FDFA0F1A_AdjustorThunk },
+	{ 0x06000038, AccessibilityNodeData_set_implementsSelected_m9CE2D7764BD44B684C39238FAA6DEE63FF06DA7F_AdjustorThunk },
+	{ 0x06000039, AccessibilityNodeData_set_implementsDismissed_m9737F36ADF034BB82CFC756370949F79724542CD_AdjustorThunk },
+	{ 0x06000045, AccessibilityNotificationContext_get_notification_m68BFDD01B2BC766255E7B50A96DD6F96B8EA30D1_AdjustorThunk },
+	{ 0x06000046, AccessibilityNotificationContext_set_notification_m3DD36A6B5C772A6A7CDC044FB61D2E6ABCF1071B_AdjustorThunk },
+	{ 0x06000047, AccessibilityNotificationContext_get_isScreenReaderEnabled_m83C39B91CA41D4CE14E0F9F149D82A8B07A2C379_AdjustorThunk },
+	{ 0x06000048, AccessibilityNotificationContext_get_announcement_m590A8451DD0BEB7DEF23B0D0CB1F9560ECF35A71_AdjustorThunk },
+	{ 0x06000049, AccessibilityNotificationContext_get_wasAnnouncementSuccessful_m586FF2A87CB135D1EE51F8F4BDBBD20298006EE0_AdjustorThunk },
+	{ 0x0600004A, AccessibilityNotificationContext_get_currentNodeId_mEA271DE9F787C8B25EB1231ED0FA54FF599458BB_AdjustorThunk },
+	{ 0x0600004B, AccessibilityNotificationContext_get_nextNodeId_m1B5F3FA60A3A94C030A4F990D8F820467E3E6514_AdjustorThunk },
+	{ 0x0600004C, AccessibilityNotificationContext_set_nextNodeId_m7902300291066B5DB6F0A31155E42255C21257ED_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[127] = 
+static const int32_t s_InvokerIndices[144] = 
 {
-	6943,
-	5343,
-	11634,
-	6825,
-	6729,
-	11636,
-	11636,
-	11636,
-	11636,
-	12478,
-	11627,
-	12559,
-	12559,
-	12508,
-	10137,
-	9747,
-	11627,
-	11648,
-	12508,
-	12559,
-	12559,
-	12559,
-	6789,
-	5410,
-	6729,
-	5343,
-	5445,
-	5343,
-	6825,
-	5445,
-	5445,
-	5325,
-	5324,
-	6943,
-	6943,
-	6943,
-	6943,
-	5410,
-	5343,
-	5445,
-	5445,
-	5445,
-	5537,
-	5343,
-	5537,
-	5468,
-	5410,
-	5445,
-	5410,
-	5343,
-	10139,
-	10143,
-	10142,
-	10142,
-	11122,
-	10138,
-	10137,
-	10137,
-	6789,
-	5410,
-	6729,
-	6825,
-	6729,
-	6789,
-	6789,
-	5410,
-	12478,
-	11628,
-	12508,
-	12559,
+	8719,
+	6742,
+	14223,
+	8575,
+	8447,
+	14225,
+	14225,
+	14225,
+	14225,
+	15115,
+	14216,
+	15202,
+	15202,
+	15147,
+	11829,
+	12058,
+	14216,
+	14237,
+	15147,
+	15202,
+	15202,
+	15202,
+	8526,
+	6826,
+	8447,
+	6742,
+	6874,
+	6742,
+	8575,
+	6874,
+	6874,
+	8626,
+	6918,
+	8447,
+	6742,
+	8447,
+	6742,
+	6723,
+	6721,
+	8719,
+	8719,
+	8719,
+	8719,
+	6826,
+	6742,
+	6874,
+	6874,
+	6874,
+	6993,
+	6742,
+	6993,
+	6899,
+	6826,
+	6874,
+	6826,
+	6742,
+	6742,
+	12511,
+	12515,
+	12514,
+	12514,
+	12510,
+	13577,
+	14221,
+	14221,
+	13577,
+	12509,
+	12509,
+	8526,
+	6826,
+	8447,
+	8575,
+	8447,
+	8526,
+	8526,
+	6826,
+	14231,
+	14217,
+	14217,
+	14231,
+	14217,
+	14217,
+	15115,
+	14217,
+	15147,
+	15202,
 	-1,
-	11628,
-	11636,
-	12508,
-	12559,
-	11627,
-	5445,
-	6943,
-	1525,
-	6943,
-	1012,
-	9867,
-	5343,
-	6789,
-	6825,
-	6825,
-	6825,
-	6729,
-	6925,
-	6729,
-	6925,
-	6825,
-	6825,
-	6852,
-	5468,
-	6825,
-	6943,
-	6789,
-	5324,
-	6943,
-	6943,
-	6729,
-	5343,
-	5343,
-	6729,
+	14217,
+	14225,
+	15147,
+	15202,
+	14216,
+	6874,
+	8719,
+	2082,
+	8719,
+	1410,
+	12202,
+	6742,
+	8526,
+	8575,
+	8575,
+	8575,
+	8447,
+	8702,
+	8447,
+	8702,
+	8575,
+	8575,
+	8603,
+	6899,
+	8575,
+	8719,
+	8526,
+	6721,
+	8719,
+	8719,
+	8447,
+	6742,
+	6742,
+	8447,
+	8719,
+	8719,
+	8447,
 	-1,
 	-1,
 	-1,
 	-1,
 	-1,
 	-1,
-	6825,
-	6943,
-	6943,
-	5343,
-	1525,
-	6825,
-	1012,
-	6943,
+	8575,
+	8719,
+	8719,
+	6742,
+	2082,
+	8575,
+	1410,
+	8719,
 	-1,
-	6943,
+	8719,
 	-1,
 	-1,
-	5343,
-	5343,
-	11636,
-	11636,
+	6742,
+	6742,
 };
 static const Il2CppTokenRangePair s_rgctxIndices[4] = 
 {
-	{ 0x02000010, { 2, 8 } },
-	{ 0x06000047, { 0, 2 } },
-	{ 0x0600007A, { 10, 2 } },
-	{ 0x0600007B, { 12, 4 } },
+	{ 0x02000011, { 2, 8 } },
+	{ 0x06000057, { 0, 2 } },
+	{ 0x0600008D, { 10, 2 } },
+	{ 0x0600008E, { 12, 4 } },
 };
 extern const uint32_t g_rgctx_T_tD5F3F41A7F8057A8B53DDCF4662BD926A404EB4D;
 extern const uint32_t g_rgctx_ServiceManager_GetService_TisT_tD5F3F41A7F8057A8B53DDCF4662BD926A404EB4D_m37EF4D438603D50B174415DF67D3A6494D8EC10F;
@@ -497,9 +562,9 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_AccessibilityModule_Code
 const Il2CppCodeGenModule g_UnityEngine_AccessibilityModule_CodeGenModule = 
 {
 	"UnityEngine.AccessibilityModule.dll",
-	127,
+	144,
 	s_methodPointers,
-	32,
+	39,
 	s_adjustorThunks,
 	s_InvokerIndices,
 	0,

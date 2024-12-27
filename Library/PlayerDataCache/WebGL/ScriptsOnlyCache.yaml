@@ -7,11 +7,10 @@ ScriptsOnlyBuild:
     - GameManager
     - MenuScript
     - Movimento
-    - NGHelper
+    - NgioAppConnector
     - PlayerMovimento
     - PlayerScript
     - Pontuacao
-    - io.newgrounds.core
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Animation.Runtime.dll:
@@ -21,18 +20,26 @@ ScriptsOnlyBuild:
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
     Unity.2D.Tilemap.Editor.dll:
-    - UnityEditor.Tilemaps.GridBrush
-    - UnityEditor.Tilemaps.GridBrushPickStore
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
-    - UnityEditor.Tilemaps.TilemapEditorToolPreferences
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.TextMeshPro:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.CommandLineTest.RunData
@@ -47,11 +54,32 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   serializedClasses:
+    Unity.TextMeshPro:
+    - TMPro.FaceInfo_Legacy
+    - TMPro.FontAssetCreationSettings
+    - TMPro.KerningTable
+    - TMPro.TMP_Character
+    - TMPro.TMP_FontFeatureTable
+    - TMPro.TMP_FontWeightPair
+    - TMPro.TMP_Sprite
+    - TMPro.TMP_SpriteCharacter
+    - TMPro.TMP_SpriteGlyph
+    - TMPro.TMP_Style
+    - TMPro.VertexGradient
     UnityEngine.CoreModule:
     - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
     - UnityEngine.Events.PersistentListenerMode
+    UnityEngine.TextCoreFontEngineModule:
+    - UnityEngine.TextCore.FaceInfo
+    - UnityEngine.TextCore.Glyph
+    - UnityEngine.TextCore.GlyphMetrics
+    - UnityEngine.TextCore.GlyphRect
+    - UnityEngine.TextCore.LowLevel.GlyphAdjustmentRecord
+    - UnityEngine.TextCore.LowLevel.GlyphPairAdjustmentRecord
+    - UnityEngine.TextCore.LowLevel.GlyphValueRecord
     UnityEngine.UI:
+    - UnityEngine.EventSystems.EventTrigger/TriggerEvent
     - UnityEngine.UI.AnimationTriggers
     - UnityEngine.UI.Button/ButtonClickedEvent
     - UnityEngine.UI.ColorBlock
@@ -113,35 +141,35 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 17716}
+      Script: {instanceID: 17790}
     - Class: 114
-      Script: {instanceID: 17718}
+      Script: {instanceID: 17792}
     - Class: 114
-      Script: {instanceID: 23622}
+      Script: {instanceID: 24078}
     - Class: 114
-      Script: {instanceID: 23670}
+      Script: {instanceID: 24132}
     - Class: 114
-      Script: {instanceID: 23686}
+      Script: {instanceID: 24146}
     - Class: 114
-      Script: {instanceID: 23814}
+      Script: {instanceID: 24284}
     - Class: 114
-      Script: {instanceID: 23870}
+      Script: {instanceID: 24340}
     - Class: 114
-      Script: {instanceID: 23950}
+      Script: {instanceID: 24438}
     - Class: 114
-      Script: {instanceID: 24992}
+      Script: {instanceID: 25568}
     - Class: 114
-      Script: {instanceID: 25032}
+      Script: {instanceID: 25618}
     - Class: 114
-      Script: {instanceID: 25266}
+      Script: {instanceID: 25876}
     - Class: 114
-      Script: {instanceID: 25652}
+      Script: {instanceID: 26290}
     - Class: 114
-      Script: {instanceID: 26022}
+      Script: {instanceID: 26696}
     - Class: 114
-      Script: {instanceID: 26350}
+      Script: {instanceID: 27054}
     - Class: 114
-      Script: {instanceID: 26698}
+      Script: {instanceID: 27430}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -153,6 +181,69 @@ ScriptsOnlyBuild:
     - Class: 196
       Script: {instanceID: 0}
     - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Loader.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 23698}
+    - Class: 114
+      Script: {instanceID: 24078}
+    - Class: 114
+      Script: {instanceID: 24340}
+    - Class: 114
+      Script: {instanceID: 24874}
+    - Class: 114
+      Script: {instanceID: 25288}
+    - Class: 114
+      Script: {instanceID: 25618}
+    - Class: 114
+      Script: {instanceID: 25876}
+    - Class: 114
+      Script: {instanceID: 26696}
+    - Class: 114
+      Script: {instanceID: 26838}
+    - Class: 114
+      Script: {instanceID: 26916}
+    - Class: 114
+      Script: {instanceID: 27054}
+    - Class: 114
+      Script: {instanceID: 27430}
+    - Class: 114
+      Script: {instanceID: 37416}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 124
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -184,25 +275,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 23622}
+      Script: {instanceID: 24078}
     - Class: 114
-      Script: {instanceID: 23870}
+      Script: {instanceID: 24340}
     - Class: 114
-      Script: {instanceID: 25032}
+      Script: {instanceID: 25618}
     - Class: 114
-      Script: {instanceID: 25056}
+      Script: {instanceID: 25642}
     - Class: 114
-      Script: {instanceID: 25266}
+      Script: {instanceID: 25876}
     - Class: 114
-      Script: {instanceID: 26022}
+      Script: {instanceID: 26696}
     - Class: 114
-      Script: {instanceID: 26350}
+      Script: {instanceID: 27054}
     - Class: 114
-      Script: {instanceID: 26460}
-    - Class: 114
-      Script: {instanceID: 26698}
-    - Class: 114
-      Script: {instanceID: 27720}
+      Script: {instanceID: 27430}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -242,16 +329,16 @@ ScriptsOnlyBuild:
     className: CinemachinePixelPerfect
   - hash:
       serializedVersion: 2
-      Hash: 04b6685b6f724c0d6024e6b6f96c8202
-    assemblyName: Unity.Timeline
-    namespaceName: UnityEngine.Timeline
-    className: TimelineAsset
-  - hash:
-      serializedVersion: 2
       Hash: 80aeb876b0e95f6256bbfcbf33e26e84
     assemblyName: Unity.2D.IK.Runtime
     namespaceName: UnityEngine.U2D.IK
     className: LimbSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: 04b6685b6f724c0d6024e6b6f96c8202
+    assemblyName: Unity.Timeline
+    namespaceName: UnityEngine.Timeline
+    className: TimelineAsset
   - hash:
       serializedVersion: 2
       Hash: b2d2a01a2a85d9ed12e80cb33a9a6044
@@ -518,16 +605,10 @@ ScriptsOnlyBuild:
     className: RectMask2D
   - hash:
       serializedVersion: 2
-      Hash: ece1e4406dfd0bdc7f9516e4d85e1941
+      Hash: a4ba242ad7c19ed77c775b388363e75c
     assemblyName: Unity.AI.Navigation
     namespaceName: Unity.AI.Navigation
     className: NavMeshLink
-  - hash:
-      serializedVersion: 2
-      Hash: e6ee7dccba41ae87d10e3d922c6cb71c
-    assemblyName: Unity.TextMeshPro
-    namespaceName: TMPro
-    className: TMP_InputField
   - hash:
       serializedVersion: 2
       Hash: 53e329840e6d03aebec76623c3b054db
@@ -536,13 +617,19 @@ ScriptsOnlyBuild:
     className: Slider
   - hash:
       serializedVersion: 2
+      Hash: e6ee7dccba41ae87d10e3d922c6cb71c
+    assemblyName: Unity.TextMeshPro
+    namespaceName: TMPro
+    className: TMP_InputField
+  - hash:
+      serializedVersion: 2
       Hash: 47d7617577a0fb8e6952c531d2cfddbb
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: GameManager
   - hash:
       serializedVersion: 2
-      Hash: d55992199bd2f5a5502658391cdf8ba7
+      Hash: 10399b4e44f874d68a2dad01fa7b8c30
     assemblyName: Unity.AI.Navigation
     namespaceName: Unity.AI.Navigation
     className: NavMeshSurface
@@ -626,16 +713,16 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
-      Hash: 4fcf0bb4aff1d14a1dfcdedc4b07bd05
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.EventSystems
-    className: TouchInputModule
-  - hash:
-      serializedVersion: 2
       Hash: 3ca7f2be93d5156a91693dfd4bd38e3f
     assemblyName: Unity.2D.IK.Runtime
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: 4fcf0bb4aff1d14a1dfcdedc4b07bd05
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.EventSystems
+    className: TouchInputModule
   - hash:
       serializedVersion: 2
       Hash: 8703b6ae2b0eefd9dafbc44d8d333fb1
@@ -674,7 +761,7 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 9ebb206587356b4f57cd7f4108f0f87f
+      Hash: 810e3c228b295cc60c4de2cdd94b18cb
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TMP_SpriteAsset
@@ -686,7 +773,7 @@ ScriptsOnlyBuild:
     className: ActivationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 1799e2459e3f656b6f21094fd998eaee
+      Hash: e6b258489c88376c5869946b2735e7e5
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TMP_FontAsset
@@ -714,12 +801,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.SpriteShape.Runtime
     namespaceName: UnityEngine.U2D
     className: SpriteShape
-  - hash:
-      serializedVersion: 2
-      Hash: 9583cb6cdce75556d3e21d4caf7038e7
-    assemblyName: Assembly-CSharp
-    namespaceName: io.newgrounds
-    className: core
   - hash:
       serializedVersion: 2
       Hash: 1131d16e2402427640760042b5486b11
@@ -752,7 +833,7 @@ ScriptsOnlyBuild:
     className: Toggle
   - hash:
       serializedVersion: 2
-      Hash: 061a5d77ce0aa52a60c21c566c6d8af2
+      Hash: 4663ce278bf334bc7cb334ea8061129e
     assemblyName: Unity.AI.Navigation
     namespaceName: Unity.AI.Navigation
     className: NavMeshModifierVolume
@@ -782,12 +863,6 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
-      Hash: 387b44945e71d0201345ad6ac1befe09
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: NewgroundsAPI
-  - hash:
-      serializedVersion: 2
       Hash: 3b5263a98bcc71d9a9d1d78a31b34ced
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
@@ -812,19 +887,13 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 98dedda1a2d91b973768472ee652cdda
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: NGHelper
-  - hash:
-      serializedVersion: 2
       Hash: a90f6a00b23520788be7d89ee3b0773d
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Scrollbar
   - hash:
       serializedVersion: 2
-      Hash: 68f2cb287af2eee1f639824485a3402b
+      Hash: 423a204f105739da55558e8e0d136a67
     assemblyName: Unity.AI.Navigation
     namespaceName: Unity.AI.Navigation
     className: NavMeshModifier
@@ -852,8 +921,15 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
     className: EventTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: e953bea6392c490c4defda21bbd0f9d7
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: NgioAppConnector
   platform: 20
   scenePathNames:
+  - Assets/Scenes/Loader.unity
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Game.unity
   playerPath: "C:/Users/rapha/OneDrive/\xC1rea de Trabalho/index"

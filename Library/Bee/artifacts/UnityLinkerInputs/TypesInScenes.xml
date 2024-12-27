@@ -4,10 +4,9 @@
 		<type fullname="ConeSpawner" preserve="nothing"/>
 		<type fullname="DestruirCone" preserve="nothing"/>
 		<type fullname="GameManager" preserve="nothing"/>
-		<type fullname="io.newgrounds.core" preserve="nothing"/>
 		<type fullname="MenuScript" preserve="nothing"/>
 		<type fullname="Movimento" preserve="nothing"/>
-		<type fullname="NGHelper" preserve="nothing"/>
+		<type fullname="NgioAppConnector" preserve="nothing"/>
 		<type fullname="PlayerMovimento" preserve="nothing"/>
 		<type fullname="PlayerScript" preserve="nothing"/>
 		<type fullname="Pontuacao" preserve="nothing"/>
@@ -17,13 +16,19 @@
 		<type fullname="UnityEngine.U2D.Animation.DeformationManager" preserve="nothing"/>
 		<type fullname="UnityEngine.U2D.Animation.DeformationManagerUpdater" preserve="nothing"/>
 	</assembly>
+	<assembly fullname="Unity.TextMeshPro">
+		<type fullname="TMPro.TextMeshProUGUI" preserve="nothing"/>
+		<type fullname="TMPro.TMP_FontAsset" preserve="nothing"/>
+		<type fullname="TMPro.TMP_Settings" preserve="nothing"/>
+		<type fullname="TMPro.TMP_SpriteAsset" preserve="nothing"/>
+		<type fullname="TMPro.TMP_StyleSheet" preserve="nothing"/>
+	</assembly>
 	<assembly fullname="UnityEngine">
 		<type fullname="UnityEditor.AudioManager" preserve="nothing"/>
 		<type fullname="UnityEditor.InputManager" preserve="nothing"/>
 		<type fullname="UnityEditor.MonoManager" preserve="nothing"/>
 		<type fullname="UnityEditor.MonoScript" preserve="nothing"/>
 		<type fullname="UnityEditor.Physics2DSettings" preserve="nothing"/>
-		<type fullname="UnityEditor.PhysicsManager" preserve="nothing"/>
 		<type fullname="UnityEditor.PlayerSettings" preserve="nothing"/>
 		<type fullname="UnityEditor.TagManager" preserve="nothing"/>
 		<type fullname="UnityEditor.TimeManager" preserve="nothing"/>

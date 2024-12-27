@@ -7,19 +7,19 @@
 
 
 
-extern void EmbeddedAttribute__ctor_mBE4821E7A76BDB478C0DE0388B54D77EF020B536 (void);
-extern void IsReadOnlyAttribute__ctor_m21F7AB503DC196A20A50CADA5CBE654735E60EFC (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_m5AEC11BEDCF402372741582A926E9D7E5C979AC6 (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m0D7FC8D9CBAF4951124B56FA51165015F41B67A4 (void);
 static Il2CppMethodPointer s_methodPointers[4] = 
 {
-	EmbeddedAttribute__ctor_mBE4821E7A76BDB478C0DE0388B54D77EF020B536,
-	IsReadOnlyAttribute__ctor_m21F7AB503DC196A20A50CADA5CBE654735E60EFC,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_m5AEC11BEDCF402372741582A926E9D7E5C979AC6,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m0D7FC8D9CBAF4951124B56FA51165015F41B67A4,
 	NULL,
 	NULL,
 };
 static const int32_t s_InvokerIndices[4] = 
 {
-	6943,
-	6943,
+	15222,
+	8719,
 	-1,
 	-1,
 };

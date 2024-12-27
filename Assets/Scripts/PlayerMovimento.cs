@@ -42,7 +42,7 @@ public class PlayerMovimento : MonoBehaviour
     void MoveEsquerda()
     {
         float forcaX = 0f;
-        float vel = Mathf.Abs(rigidbody.velocity.x);
+        float vel = Mathf.Abs(rigidbody.linearVelocity.x);
         if (vel < maximo)
         {
             forcaX = -velocidade;
@@ -55,7 +55,7 @@ public class PlayerMovimento : MonoBehaviour
     void MoveDireita()
     {
         float forcaX = 0f;
-        float vel = Mathf.Abs(rigidbody.velocity.x);
+        float vel = Mathf.Abs(rigidbody.linearVelocity.x);
         if (vel < maximo)
         {
             forcaX = velocidade;

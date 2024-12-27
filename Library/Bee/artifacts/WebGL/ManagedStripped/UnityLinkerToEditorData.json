@@ -30,10 +30,6 @@
         "dependencies": []
       },
       {
-        "name": "CommandStateObserver",
-        "dependencies": []
-      },
-      {
         "name": "ContentLoad",
         "dependencies": []
       },
@@ -59,10 +55,6 @@
       },
       {
         "name": "GameCenter",
-        "dependencies": []
-      },
-      {
-        "name": "GraphToolsFoundation",
         "dependencies": []
       },
       {
@@ -130,15 +122,15 @@
         "dependencies": []
       },
       {
-        "name": "Profiler",
-        "dependencies": []
-      },
-      {
         "name": "Properties",
         "dependencies": []
       },
       {
         "name": "ScreenCapture",
+        "dependencies": []
+      },
+      {
+        "name": "ShaderVariantAnalytics",
         "dependencies": []
       },
       {

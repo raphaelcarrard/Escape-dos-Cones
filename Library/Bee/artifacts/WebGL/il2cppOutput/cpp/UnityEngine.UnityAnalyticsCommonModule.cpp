@@ -9,6 +9,7 @@ struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
 struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
 struct AnalyticsEventBase_t4CB926589E315DB970B0140489C698A8D4A40753;
 struct AssetDatabaseRefreshAnalytic_tE76E2BC8AC6BDAE6CC572691E17CCDEB62E5B477;
+struct AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A;
 struct AssetImportAnalytic_tBCEFC2583311E752D01764ECBA46C496EDBF6180;
 struct AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378;
 struct BuildAssetBundleAnalytic_tD89C7AC30D63005A4698BE765CA8011832ACA947;
@@ -43,6 +44,7 @@ struct VRDeviceMirrorAnalytic_t41CDC93A658EE982004C9CFCCBF4C37BC603D0DE;
 struct VRDeviceUserAnalytic_t4E9431DB74D2A4520E889C482FED0D8465FD5A52;
 
 IL2CPP_EXTERN_C RuntimeClass* AssetDatabaseRefreshAnalytic_tE76E2BC8AC6BDAE6CC572691E17CCDEB62E5B477_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AssetImportAnalytic_tBCEFC2583311E752D01764ECBA46C496EDBF6180_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* BuildAssetBundleAnalytic_tD89C7AC30D63005A4698BE765CA8011832ACA947_il2cpp_TypeInfo_var;
@@ -71,10 +73,15 @@ IL2CPP_EXTERN_C RuntimeClass* VRDeviceActiveControllersAnalytic_t9A4E3228B274062
 IL2CPP_EXTERN_C RuntimeClass* VRDeviceAnalyticAspect_tB3710E3DECE161363AD4ECB0386B7F0A81510697_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* VRDeviceMirrorAnalytic_t41CDC93A658EE982004C9CFCCBF4C37BC603D0DE_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* VRDeviceUserAnalytic_t4E9431DB74D2A4520E889C482FED0D8465FD5A52_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A____asset_extensions_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378____selected_asset_extensions_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591____packages_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC____vr_active_controllers_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral0105950C634BC8A51D3259AE962F71FC72835343;
 IL2CPP_EXTERN_C String_t* _stringLiteral1C963463249E8B8F67737B7C14802404698C939E;
 IL2CPP_EXTERN_C String_t* _stringLiteral250BB85D3C4C284D4DFA1B45F0FEA68820010D12;
 IL2CPP_EXTERN_C String_t* _stringLiteral444CE3C178312D66C7A173D4D85E4CB7123F4FFB;
+IL2CPP_EXTERN_C String_t* _stringLiteral45079021CEFEB624889E25AD5CE548689DF8179D;
 IL2CPP_EXTERN_C String_t* _stringLiteral470BEB8526F1BDBEF299F3B96C05B5C68046A166;
 IL2CPP_EXTERN_C String_t* _stringLiteral4C14312537906454E6EFD47C621B95D71B3BA564;
 IL2CPP_EXTERN_C String_t* _stringLiteral5978B75A8CFCFB0B4C27F319C6C4EA3690F57ABA;
@@ -99,6 +106,10 @@ IL2CPP_EXTERN_C String_t* _stringLiteralC54E9E453CAA8F5DCE5559DA89197E4A9C9B3C54
 IL2CPP_EXTERN_C String_t* _stringLiteralD9F7EA90919B9532B478C1D0C4A113235F0239A3;
 IL2CPP_EXTERN_C String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 IL2CPP_EXTERN_C String_t* _stringLiteralE4C72D26E22C75481070FAE5E8E422AF0C779F58;
+IL2CPP_EXTERN_C const RuntimeType* AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC_0_0_0_var;
 
 struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
 
@@ -247,6 +258,30 @@ struct AssetDatabaseRefreshAnalytic_tE76E2BC8AC6BDAE6CC572691E17CCDEB62E5B477_ma
 	int64_t ___CacheServer_Connects;
 	int64_t ___CacheServer_Disconnects;
 };
+struct AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A  : public AnalyticsEventBase_t4CB926589E315DB970B0140489C698A8D4A40753
+{
+	String_t* ___package_name;
+	String_t* ___error_message;
+	int32_t ___items_count;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___asset_extensions;
+	bool ___include_upm_dependencies;
+};
+struct AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A_marshaled_pinvoke : public AnalyticsEventBase_t4CB926589E315DB970B0140489C698A8D4A40753_marshaled_pinvoke
+{
+	char* ___package_name;
+	char* ___error_message;
+	int32_t ___items_count;
+	char** ___asset_extensions;
+	int32_t ___include_upm_dependencies;
+};
+struct AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A_marshaled_com : public AnalyticsEventBase_t4CB926589E315DB970B0140489C698A8D4A40753_marshaled_com
+{
+	Il2CppChar* ___package_name;
+	Il2CppChar* ___error_message;
+	int32_t ___items_count;
+	Il2CppChar** ___asset_extensions;
+	int32_t ___include_upm_dependencies;
+};
 struct AssetImportAnalytic_tBCEFC2583311E752D01764ECBA46C496EDBF6180  : public AnalyticsEventBase_t4CB926589E315DB970B0140489C698A8D4A40753
 {
 	String_t* ___package_name;
@@ -268,6 +303,12 @@ struct AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378  : pu
 	int32_t ___package_items_count;
 	int32_t ___package_import_status;
 	String_t* ___error_message;
+	int32_t ___project_assets_count;
+	int32_t ___unselected_assets_count;
+	int32_t ___selected_new_assets_count;
+	int32_t ___selected_changed_assets_count;
+	int32_t ___unchanged_assets_count;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___selected_asset_extensions;
 };
 struct AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378_marshaled_pinvoke : public AnalyticsEventBase_t4CB926589E315DB970B0140489C698A8D4A40753_marshaled_pinvoke
 {
@@ -275,6 +316,12 @@ struct AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378_marsh
 	int32_t ___package_items_count;
 	int32_t ___package_import_status;
 	char* ___error_message;
+	int32_t ___project_assets_count;
+	int32_t ___unselected_assets_count;
+	int32_t ___selected_new_assets_count;
+	int32_t ___selected_changed_assets_count;
+	int32_t ___unchanged_assets_count;
+	char** ___selected_asset_extensions;
 };
 struct AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378_marshaled_com : public AnalyticsEventBase_t4CB926589E315DB970B0140489C698A8D4A40753_marshaled_com
 {
@@ -282,6 +329,12 @@ struct AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378_marsh
 	int32_t ___package_items_count;
 	int32_t ___package_import_status;
 	Il2CppChar* ___error_message;
+	int32_t ___project_assets_count;
+	int32_t ___unselected_assets_count;
+	int32_t ___selected_new_assets_count;
+	int32_t ___selected_changed_assets_count;
+	int32_t ___unchanged_assets_count;
+	Il2CppChar** ___selected_asset_extensions;
 };
 struct BuildAssetBundleAnalytic_tD89C7AC30D63005A4698BE765CA8011832ACA947  : public AnalyticsEventBase_t4CB926589E315DB970B0140489C698A8D4A40753
 {
@@ -777,6 +830,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PackageManagerResolveErrorPackageAnalyti
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PackageManagerStartServerPackageAnalytic__ctor_mE67ABB0A919D9524E4C174FA7BD84873373D2FB7 (PackageManagerStartServerPackageAnalytic_tFAED1187624F3F7642BC2469973A6EADFAD4D605* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssetImportStatusAnalytic__ctor_m08D8DB74F18BFAF3461FF93FA9ACE057C516F928 (AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssetImportAnalytic__ctor_m5335AA39762B1606364B586E09B66490EB8A3042 (AssetImportAnalytic_tBCEFC2583311E752D01764ECBA46C496EDBF6180* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssetExportAnalytic__ctor_m7987504F06FAC24A6C0EF8EF978DD31F453B48F9 (AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StallSummaryAnalytic__ctor_m6F569DB918D3775A5024D9A36999BF1E81B47605 (StallSummaryAnalytic_tE5B942520E7621FE78CB893AAA72EC272DF43827* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StallMarkerAnalytic__ctor_m1248F3FC87B6DB3D32A70EBEE14859942A476CDA (StallMarkerAnalytic_tC1D60AF4C9F24333C1DF5BD3D237E0C74E63B839* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TestAnalytic__ctor_mB6C1AABD2CA785D03984294A1813326B40CCB373 (TestAnalytic_tD5DCA82EB41AEDD8BAF9A8AFF6AB3828D74D0CF7* __this, const RuntimeMethod* method) ;
@@ -1615,12 +1669,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRDeviceUserAnalytic__ctor_m99FBEFC61AE6
 #endif
 IL2CPP_EXTERN_C void VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC_marshal_pinvoke(const VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC& unmarshaled, VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___vr_active_controllersException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'vr_active_controllers' of type 'VRDeviceActiveControllersAnalytic'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC____vr_active_controllers_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___vr_active_controllersException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC____vr_active_controllers_FieldInfo_var, VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___vr_active_controllersException, NULL);
 }
 IL2CPP_EXTERN_C void VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC_marshal_pinvoke_back(const VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC_marshaled_pinvoke& marshaled, VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC& unmarshaled)
 {
-	Exception_t* ___vr_active_controllersException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'vr_active_controllers' of type 'VRDeviceActiveControllersAnalytic'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC____vr_active_controllers_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___vr_active_controllersException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC____vr_active_controllers_FieldInfo_var, VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___vr_active_controllersException, NULL);
 }
 IL2CPP_EXTERN_C void VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC_marshal_pinvoke_cleanup(VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC_marshaled_pinvoke& marshaled)
@@ -1628,12 +1696,26 @@ IL2CPP_EXTERN_C void VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF
 }
 IL2CPP_EXTERN_C void VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC_marshal_com(const VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC& unmarshaled, VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC_marshaled_com& marshaled)
 {
-	Exception_t* ___vr_active_controllersException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'vr_active_controllers' of type 'VRDeviceActiveControllersAnalytic'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC____vr_active_controllers_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___vr_active_controllersException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC____vr_active_controllers_FieldInfo_var, VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___vr_active_controllersException, NULL);
 }
 IL2CPP_EXTERN_C void VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC_marshal_com_back(const VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC_marshaled_com& marshaled, VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC& unmarshaled)
 {
-	Exception_t* ___vr_active_controllersException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'vr_active_controllers' of type 'VRDeviceActiveControllersAnalytic'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC____vr_active_controllers_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___vr_active_controllersException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC____vr_active_controllers_FieldInfo_var, VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___vr_active_controllersException, NULL);
 }
 IL2CPP_EXTERN_C void VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC_marshal_com_cleanup(VRDeviceActiveControllersAnalytic_t9A4E3228B274062CFA7B41EF94A335F25C8B11BC_marshaled_com& marshaled)
@@ -3539,12 +3621,26 @@ IL_0009:
 #endif
 IL2CPP_EXTERN_C void PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591_marshal_pinvoke(const PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591& unmarshaled, PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___packagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'packages' of type 'PackageManagerResolvePackageAnalytic'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591____packages_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___packagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591____packages_FieldInfo_var, PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___packagesException, NULL);
 }
 IL2CPP_EXTERN_C void PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591_marshal_pinvoke_back(const PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591_marshaled_pinvoke& marshaled, PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591& unmarshaled)
 {
-	Exception_t* ___packagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'packages' of type 'PackageManagerResolvePackageAnalytic'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591____packages_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___packagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591____packages_FieldInfo_var, PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___packagesException, NULL);
 }
 IL2CPP_EXTERN_C void PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591_marshal_pinvoke_cleanup(PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591_marshaled_pinvoke& marshaled)
@@ -3552,12 +3648,26 @@ IL2CPP_EXTERN_C void PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A
 }
 IL2CPP_EXTERN_C void PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591_marshal_com(const PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591& unmarshaled, PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591_marshaled_com& marshaled)
 {
-	Exception_t* ___packagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'packages' of type 'PackageManagerResolvePackageAnalytic'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591____packages_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___packagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591____packages_FieldInfo_var, PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___packagesException, NULL);
 }
 IL2CPP_EXTERN_C void PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591_marshal_com_back(const PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591_marshaled_com& marshaled, PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591& unmarshaled)
 {
-	Exception_t* ___packagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'packages' of type 'PackageManagerResolvePackageAnalytic'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591____packages_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___packagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591____packages_FieldInfo_var, PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___packagesException, NULL);
 }
 IL2CPP_EXTERN_C void PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591_marshal_com_cleanup(PackageManagerResolvePackageAnalytic_t0EF6DAF477F5FC0FE561A4D42A4A43EA16441591_marshaled_com& marshaled)
@@ -4224,93 +4334,57 @@ IL_0009:
 #endif
 IL2CPP_EXTERN_C void AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378_marshal_pinvoke(const AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378& unmarshaled, AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378_marshaled_pinvoke& marshaled)
 {
-	marshaled.___package_name = il2cpp_codegen_marshal_string(unmarshaled.___package_name);
-	marshaled.___package_items_count = unmarshaled.___package_items_count;
-	marshaled.___package_import_status = unmarshaled.___package_import_status;
-	marshaled.___error_message = il2cpp_codegen_marshal_string(unmarshaled.___error_message);
-	marshaled.___eventName = il2cpp_codegen_marshal_string(unmarshaled.___eventName);
-	marshaled.___eventVersion = unmarshaled.___eventVersion;
-	marshaled.___eventPrefix = il2cpp_codegen_marshal_string(unmarshaled.___eventPrefix);
-	marshaled.___sendEventOptions = unmarshaled.___sendEventOptions;
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378____selected_asset_extensions_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___selected_asset_extensionsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378____selected_asset_extensions_FieldInfo_var, AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378_0_0_0_var);
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___selected_asset_extensionsException, NULL);
 }
 IL2CPP_EXTERN_C void AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378_marshal_pinvoke_back(const AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378_marshaled_pinvoke& marshaled, AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378& unmarshaled)
 {
-	unmarshaled.___package_name = il2cpp_codegen_marshal_string_result(marshaled.___package_name);
-	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___package_name), (void*)il2cpp_codegen_marshal_string_result(marshaled.___package_name));
-	int32_t unmarshaledpackage_items_count_temp_1 = 0;
-	unmarshaledpackage_items_count_temp_1 = marshaled.___package_items_count;
-	unmarshaled.___package_items_count = unmarshaledpackage_items_count_temp_1;
-	int32_t unmarshaledpackage_import_status_temp_2 = 0;
-	unmarshaledpackage_import_status_temp_2 = marshaled.___package_import_status;
-	unmarshaled.___package_import_status = unmarshaledpackage_import_status_temp_2;
-	unmarshaled.___error_message = il2cpp_codegen_marshal_string_result(marshaled.___error_message);
-	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___error_message), (void*)il2cpp_codegen_marshal_string_result(marshaled.___error_message));
-	unmarshaled.___eventName = il2cpp_codegen_marshal_string_result(marshaled.___eventName);
-	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___eventName), (void*)il2cpp_codegen_marshal_string_result(marshaled.___eventName));
-	int32_t unmarshaledeventVersion_temp_5 = 0;
-	unmarshaledeventVersion_temp_5 = marshaled.___eventVersion;
-	unmarshaled.___eventVersion = unmarshaledeventVersion_temp_5;
-	unmarshaled.___eventPrefix = il2cpp_codegen_marshal_string_result(marshaled.___eventPrefix);
-	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___eventPrefix), (void*)il2cpp_codegen_marshal_string_result(marshaled.___eventPrefix));
-	int32_t unmarshaledsendEventOptions_temp_7 = 0;
-	unmarshaledsendEventOptions_temp_7 = marshaled.___sendEventOptions;
-	unmarshaled.___sendEventOptions = unmarshaledsendEventOptions_temp_7;
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378____selected_asset_extensions_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___selected_asset_extensionsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378____selected_asset_extensions_FieldInfo_var, AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378_0_0_0_var);
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___selected_asset_extensionsException, NULL);
 }
 IL2CPP_EXTERN_C void AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378_marshal_pinvoke_cleanup(AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378_marshaled_pinvoke& marshaled)
 {
-	il2cpp_codegen_marshal_free(marshaled.___package_name);
-	marshaled.___package_name = NULL;
-	il2cpp_codegen_marshal_free(marshaled.___error_message);
-	marshaled.___error_message = NULL;
-	il2cpp_codegen_marshal_free(marshaled.___eventName);
-	marshaled.___eventName = NULL;
-	il2cpp_codegen_marshal_free(marshaled.___eventPrefix);
-	marshaled.___eventPrefix = NULL;
 }
 IL2CPP_EXTERN_C void AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378_marshal_com(const AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378& unmarshaled, AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378_marshaled_com& marshaled)
 {
-	marshaled.___package_name = il2cpp_codegen_marshal_bstring(unmarshaled.___package_name);
-	marshaled.___package_items_count = unmarshaled.___package_items_count;
-	marshaled.___package_import_status = unmarshaled.___package_import_status;
-	marshaled.___error_message = il2cpp_codegen_marshal_bstring(unmarshaled.___error_message);
-	marshaled.___eventName = il2cpp_codegen_marshal_bstring(unmarshaled.___eventName);
-	marshaled.___eventVersion = unmarshaled.___eventVersion;
-	marshaled.___eventPrefix = il2cpp_codegen_marshal_bstring(unmarshaled.___eventPrefix);
-	marshaled.___sendEventOptions = unmarshaled.___sendEventOptions;
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378____selected_asset_extensions_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___selected_asset_extensionsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378____selected_asset_extensions_FieldInfo_var, AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378_0_0_0_var);
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___selected_asset_extensionsException, NULL);
 }
 IL2CPP_EXTERN_C void AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378_marshal_com_back(const AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378_marshaled_com& marshaled, AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378& unmarshaled)
 {
-	unmarshaled.___package_name = il2cpp_codegen_marshal_bstring_result(marshaled.___package_name);
-	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___package_name), (void*)il2cpp_codegen_marshal_bstring_result(marshaled.___package_name));
-	int32_t unmarshaledpackage_items_count_temp_1 = 0;
-	unmarshaledpackage_items_count_temp_1 = marshaled.___package_items_count;
-	unmarshaled.___package_items_count = unmarshaledpackage_items_count_temp_1;
-	int32_t unmarshaledpackage_import_status_temp_2 = 0;
-	unmarshaledpackage_import_status_temp_2 = marshaled.___package_import_status;
-	unmarshaled.___package_import_status = unmarshaledpackage_import_status_temp_2;
-	unmarshaled.___error_message = il2cpp_codegen_marshal_bstring_result(marshaled.___error_message);
-	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___error_message), (void*)il2cpp_codegen_marshal_bstring_result(marshaled.___error_message));
-	unmarshaled.___eventName = il2cpp_codegen_marshal_bstring_result(marshaled.___eventName);
-	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___eventName), (void*)il2cpp_codegen_marshal_bstring_result(marshaled.___eventName));
-	int32_t unmarshaledeventVersion_temp_5 = 0;
-	unmarshaledeventVersion_temp_5 = marshaled.___eventVersion;
-	unmarshaled.___eventVersion = unmarshaledeventVersion_temp_5;
-	unmarshaled.___eventPrefix = il2cpp_codegen_marshal_bstring_result(marshaled.___eventPrefix);
-	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___eventPrefix), (void*)il2cpp_codegen_marshal_bstring_result(marshaled.___eventPrefix));
-	int32_t unmarshaledsendEventOptions_temp_7 = 0;
-	unmarshaledsendEventOptions_temp_7 = marshaled.___sendEventOptions;
-	unmarshaled.___sendEventOptions = unmarshaledsendEventOptions_temp_7;
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378____selected_asset_extensions_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___selected_asset_extensionsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378____selected_asset_extensions_FieldInfo_var, AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378_0_0_0_var);
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___selected_asset_extensionsException, NULL);
 }
 IL2CPP_EXTERN_C void AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378_marshal_com_cleanup(AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378_marshaled_com& marshaled)
 {
-	il2cpp_codegen_marshal_free_bstring(marshaled.___package_name);
-	marshaled.___package_name = NULL;
-	il2cpp_codegen_marshal_free_bstring(marshaled.___error_message);
-	marshaled.___error_message = NULL;
-	il2cpp_codegen_marshal_free_bstring(marshaled.___eventName);
-	marshaled.___eventName = NULL;
-	il2cpp_codegen_marshal_free_bstring(marshaled.___eventPrefix);
-	marshaled.___eventPrefix = NULL;
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssetImportStatusAnalytic__ctor_m08D8DB74F18BFAF3461FF93FA9ACE057C516F928 (AssetImportStatusAnalytic_t73E7C082D60A70B2EB33853030F1F5A665F56378* __this, const RuntimeMethod* method) 
 {
@@ -4461,6 +4535,104 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AssetImportAnalytic_tBCEFC2583311E752D01764EC
 IL_0009:
 	{
 		AssetImportAnalytic_tBCEFC2583311E752D01764ECBA46C496EDBF6180* L_1 = V_0;
+		return L_1;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C void AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A_marshal_pinvoke(const AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A& unmarshaled, AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A_marshaled_pinvoke& marshaled)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A____asset_extensions_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___asset_extensionsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A____asset_extensions_FieldInfo_var, AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A_0_0_0_var);
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___asset_extensionsException, NULL);
+}
+IL2CPP_EXTERN_C void AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A_marshal_pinvoke_back(const AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A_marshaled_pinvoke& marshaled, AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A& unmarshaled)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A____asset_extensions_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___asset_extensionsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A____asset_extensions_FieldInfo_var, AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A_0_0_0_var);
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___asset_extensionsException, NULL);
+}
+IL2CPP_EXTERN_C void AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A_marshal_pinvoke_cleanup(AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A_marshaled_pinvoke& marshaled)
+{
+}
+IL2CPP_EXTERN_C void AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A_marshal_com(const AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A& unmarshaled, AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A_marshaled_com& marshaled)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A____asset_extensions_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___asset_extensionsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A____asset_extensions_FieldInfo_var, AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A_0_0_0_var);
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___asset_extensionsException, NULL);
+}
+IL2CPP_EXTERN_C void AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A_marshal_com_back(const AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A_marshaled_com& marshaled, AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A& unmarshaled)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A____asset_extensions_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___asset_extensionsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A____asset_extensions_FieldInfo_var, AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A_0_0_0_var);
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___asset_extensionsException, NULL);
+}
+IL2CPP_EXTERN_C void AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A_marshal_com_cleanup(AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A_marshaled_com& marshaled)
+{
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssetExportAnalytic__ctor_m7987504F06FAC24A6C0EF8EF978DD31F453B48F9 (AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral45079021CEFEB624889E25AD5CE548689DF8179D);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		AnalyticsEventBase__ctor_m21A87ECFBEF557381DCD16B735E82680E8D14471(__this, _stringLiteral45079021CEFEB624889E25AD5CE548689DF8179D, 1, 0, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A* AssetExportAnalytic_CreateAssetExportAnalytic_m1C5A57996B7C717E018DE5C4261B7B4087608206 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A* V_0 = NULL;
+	{
+		AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A* L_0 = (AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A*)il2cpp_codegen_object_new(AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A_il2cpp_TypeInfo_var);
+		AssetExportAnalytic__ctor_m7987504F06FAC24A6C0EF8EF978DD31F453B48F9(L_0, NULL);
+		V_0 = L_0;
+		goto IL_0009;
+	}
+
+IL_0009:
+	{
+		AssetExportAnalytic_tC347E7D73D731A0E9B96F2A76998B7A920D75F2A* L_1 = V_0;
 		return L_1;
 	}
 }

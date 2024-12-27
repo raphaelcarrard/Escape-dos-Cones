@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour
 
     public void PausaJogo()
     {
-	    NGHelper.instance.unlockMedal(71677);
+	    StartCoroutine(NGIO.UnlockMedal(71677, NgioAppConnector.instance.OnMedalUnlocked));
         pausaPainel.SetActive(true);
         instrucaoPainel.SetActive(false);
         instrucaoTexto.gameObject.SetActive(false);
@@ -97,7 +97,7 @@ public class GameManager : MonoBehaviour
 
     public void seJogadorMorreu(int pontuacao)
     {
-        NGHelper.instance.NGSubmitScore(13586, pontuacao);
+        StartCoroutine(NGIO.PostScore(13586, pontuacao, null, NgioAppConnector.instance.OnScorePosted));
         pausaPainel.SetActive(true);
         instrucaoPainel.SetActive(false);
         instrucaoTexto.gameObject.SetActive(false);

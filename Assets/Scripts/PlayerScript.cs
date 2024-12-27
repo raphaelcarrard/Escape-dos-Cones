@@ -34,35 +34,35 @@ public class PlayerScript : MonoBehaviour
 
     void Update(){
         if(pontuacao >= 50 && medal1 == false){
-            NGHelper.instance.unlockMedal(77869);
+            StartCoroutine(NGIO.UnlockMedal(77869, NgioAppConnector.instance.OnMedalUnlocked));
             medal1 = true;
         }
         if(pontuacao >= 100 && medal2 == false){
-            NGHelper.instance.unlockMedal(77870);
+            StartCoroutine(NGIO.UnlockMedal(77870, NgioAppConnector.instance.OnMedalUnlocked));
             medal2 = true;
         }
         if(pontuacao >= 150 && medal3 == false){
-            NGHelper.instance.unlockMedal(77871);
+            StartCoroutine(NGIO.UnlockMedal(77871, NgioAppConnector.instance.OnMedalUnlocked));
             medal3 = true;
         }
         if(pontuacao >= 200 && medal4 == false){
-            NGHelper.instance.unlockMedal(77872);
+            StartCoroutine(NGIO.UnlockMedal(77872, NgioAppConnector.instance.OnMedalUnlocked));
             medal4 = true;
         }
         if(pontuacao >= 250 && medal5 == false){
-            NGHelper.instance.unlockMedal(77873);
+            StartCoroutine(NGIO.UnlockMedal(77873, NgioAppConnector.instance.OnMedalUnlocked));
             medal5 = true;
         }
         if(pontuacao >= 300 && medal6 == false){
-            NGHelper.instance.unlockMedal(77874);
+            StartCoroutine(NGIO.UnlockMedal(77874, NgioAppConnector.instance.OnMedalUnlocked));
             medal6 = true;
         }
         if(pontuacao >= 350 && medal7 == false){
-            NGHelper.instance.unlockMedal(77875);
+            StartCoroutine(NGIO.UnlockMedal(77875, NgioAppConnector.instance.OnMedalUnlocked));
             medal7 = true;
         }
         if(pontuacao >= 400 && medal8 == false){
-            NGHelper.instance.unlockMedal(77876);
+            StartCoroutine(NGIO.UnlockMedal(77876, NgioAppConnector.instance.OnMedalUnlocked));
             medal8 = true;
         }
     }
@@ -92,7 +92,7 @@ public class PlayerScript : MonoBehaviour
     {
         if (collider.gameObject.tag == "Cone")
         {
-	        NGHelper.instance.unlockMedal(71676);
+	        StartCoroutine(NGIO.UnlockMedal(71676, NgioAppConnector.instance.OnMedalUnlocked));
             GameManager.instance.seJogadorMorreu(pontuacao);
             FindObjectOfType<GameManager>().FimDeJogo();
         }
@@ -102,7 +102,7 @@ public class PlayerScript : MonoBehaviour
     {
         if (target.tag == "Cone")
         {
-	        NGHelper.instance.unlockMedal(71675);
+	        StartCoroutine(NGIO.UnlockMedal(71675, NgioAppConnector.instance.OnMedalUnlocked));
             audioSource.PlayOneShot(pontoClip);
             pontuacao++;
             GameManager.instance.SetaPontuacao(pontuacao);

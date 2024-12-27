@@ -18,17 +18,11 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_Animation();
 	RegisterModule_Animation();
 
-	void RegisterModule_AssetBundle();
-	RegisterModule_AssetBundle();
-
 	void RegisterModule_Audio();
 	RegisterModule_Audio();
 
 	void RegisterModule_Cloth();
 	RegisterModule_Cloth();
-
-	void RegisterModule_CommandStateObserver();
-	RegisterModule_CommandStateObserver();
 
 	void RegisterModule_ContentLoad();
 	RegisterModule_ContentLoad();
@@ -48,9 +42,6 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_GameCenter();
 	RegisterModule_GameCenter();
 
-	void RegisterModule_GraphToolsFoundation();
-	RegisterModule_GraphToolsFoundation();
-
 	void RegisterModule_Grid();
 	RegisterModule_Grid();
 
@@ -60,14 +51,14 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_HotReload();
 	RegisterModule_HotReload();
 
+	void RegisterModule_AssetBundle();
+	RegisterModule_AssetBundle();
+
 	void RegisterModule_IMGUI();
 	RegisterModule_IMGUI();
 
 	void RegisterModule_ImageConversion();
 	RegisterModule_ImageConversion();
-
-	void RegisterModule_Input();
-	RegisterModule_Input();
 
 	void RegisterModule_InputLegacy();
 	RegisterModule_InputLegacy();
@@ -77,6 +68,9 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 
 	void RegisterModule_JSONSerialize();
 	RegisterModule_JSONSerialize();
+
+	void RegisterModule_Input();
+	RegisterModule_Input();
 
 	void RegisterModule_Localization();
 	RegisterModule_Localization();
@@ -90,6 +84,9 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_ParticleSystem();
 	RegisterModule_ParticleSystem();
 
+	void RegisterModule_UnityAnalytics();
+	RegisterModule_UnityAnalytics();
+
 	void RegisterModule_PerformanceReporting();
 	RegisterModule_PerformanceReporting();
 
@@ -99,20 +96,17 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_Physics2D();
 	RegisterModule_Physics2D();
 
-	void RegisterModule_Profiler();
-	RegisterModule_Profiler();
-
 	void RegisterModule_Properties();
 	RegisterModule_Properties();
 
 	void RegisterModule_ScreenCapture();
 	RegisterModule_ScreenCapture();
 
+	void RegisterModule_ShaderVariantAnalytics();
+	RegisterModule_ShaderVariantAnalytics();
+
 	void RegisterModule_SpriteShape();
 	RegisterModule_SpriteShape();
-
-	void RegisterModule_SpriteMask();
-	RegisterModule_SpriteMask();
 
 	void RegisterModule_Streaming();
 	RegisterModule_Streaming();
@@ -144,6 +138,9 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_Tilemap();
 	RegisterModule_Tilemap();
 
+	void RegisterModule_SpriteMask();
+	RegisterModule_SpriteMask();
+
 	void RegisterModule_UI();
 	RegisterModule_UI();
 
@@ -158,9 +155,6 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 
 	void RegisterModule_UnityConnect();
 	RegisterModule_UnityConnect();
-
-	void RegisterModule_UnityAnalytics();
-	RegisterModule_UnityAnalytics();
 
 	void RegisterModule_UnityCurl();
 	RegisterModule_UnityCurl();
